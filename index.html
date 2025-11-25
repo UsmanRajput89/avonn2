@@ -2,27 +2,546 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>The Medication Weight Loss Program For Men</title>
-    <meta content="Avonn Is a men's health repair system personalizing treatments with proven GLP-1 weight loss treatments to help time-crunched men achieve real, lasting results." name="description" />
-    <meta content="The Medication Weight Loss Program For Men" property="og:title" />
-    <meta content="Avonn Is a men's health repair system personalizing treatments with proven GLP-1 weight loss treatments to help time-crunched men achieve real, lasting results." property="og:description" />
+    <title>Avonn Fitness - Digital Workout Programs & Coaching</title>
+    <meta
+      content="Avonn Fitness offers structured digital workout programs, high-protein nutrition plans, and personalized coaching. Get fit in 20 or 40 minutes with instant download eBooks. Transform your health and achieve real results."
+      name="description" />
+    <meta content="Avonn Fitness - Digital Workout Programs & Coaching" property="og:title" />
+    <meta
+      content="Avonn Fitness offers structured digital workout programs, high-protein nutrition plans, and personalized coaching. Get fit in 20 or 40 minutes with instant download eBooks. Transform your health and achieve real results."
+      property="og:description" />
     <meta content="images/661c99c51189817f9b594398_Replace%20Image.webp" property="og:image" />
-    <meta content="The Medication Weight Loss Program For Men" property="twitter:title" />
-    <meta content="Avonn Is a men's health repair system personalizing treatments with proven GLP-1 weight loss treatments to help time-crunched men achieve real, lasting results." property="twitter:description" />
+    <meta content="Avonn Fitness - Digital Workout Programs & Coaching" property="twitter:title" />
+    <meta
+      content="Avonn Fitness offers structured digital workout programs, high-protein nutrition plans, and personalized coaching. Get fit in 20 or 40 minutes with instant download eBooks. Transform your health and achieve real results."
+      property="twitter:description" />
     <meta content="https://cdn.prod.website-files.com/62aebd5e1a672b9ce6b506c4/661c99c51189817f9b594398_Replace%20Image.webp" property="twitter:image" />
     <meta property="og:type" content="website" />
     <meta content="summary_large_image" name="twitter:card" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="css/app.css" rel="stylesheet" type="text/css" />
     <style>
+      /* Avonn Fitness - Vibrant Design System */
+      :root {
+        --primary-green: #10b981;
+        --primary-green-dark: #059669;
+        --primary-green-light: #34d399;
+        --accent-orange: #f97316;
+        --accent-yellow: #fbbf24;
+        --dark-bg: #0f0f0f;
+        --dark-card: #1a1a1a;
+        --text-white: #ffffff;
+        --text-light: #f0f0f0;
+        --text-muted: #a0a0a0;
+        --gradient-green: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        --gradient-energy: linear-gradient(135deg, #10b981 0%, #34d399 50%, #f97316 100%);
+        --shadow-glow: 0 0 30px rgba(16, 185, 129, 0.3);
+        --shadow-card: 0 10px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Animations */
+      @keyframes pulse-glow {
+        0%,
+        100% {
+          box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+        }
+        50% {
+          box-shadow: 0 0 40px rgba(16, 185, 129, 0.6);
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes gradient-shift {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      /* Hero Section Gradient Text - High Contrast */
+      .header.left-align.lnading-header {
+        color: #10b981 !important;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Text Contrast Fixes */
+      .paragraph-large,
+      .paragraph-medium,
+      .paragraph-small {
+        color: #333333 !important;
+      }
+
+      .section.burgundy .paragraph-large,
+      .section.burgundy .paragraph-medium,
+      .section.burgundy .paragraph-small,
+      .section.black-bg .paragraph-large,
+      .section.black-bg .paragraph-medium,
+      .section.black-bg .paragraph-small {
+        color: #f0f0f0 !important;
+      }
+
+      /* Hero section text */
+      .header.left-align.lnading-header {
+        color: #10b981 !important;
+      }
+
+      /* Ensure review text is readable */
+      .review-text {
+        color: #ffffff !important;
+      }
+
+      /* Stats text contrast */
+      .stats-block,
+      .caps-text {
+        color: #10b981 !important;
+        font-weight: 600 !important;
+      }
+
+      /* Card text contrast */
+      .prod-cards .inter-15,
+      .prod-cards-2 .inter-15 {
+        color: #e0e0e0 !important;
+      }
+
+      /* Title contrast on light backgrounds */
+      .title-medium-italic {
+        color: #1a1a1a !important;
+      }
+
+      .section.burgundy .title-medium-italic,
+      .section.black-bg .title-medium-italic {
+        color: #ffffff !important;
+      }
+
+      /* FAQ text contrast - FIXED for light background */
+      .faq-sect .title-medium,
+      .faq-sect .title-medium div,
+      .faq-sect h3,
+      .faqs-container .title-medium,
+      .faqs-container .title-medium div,
+      .faqs-container .title-smaller-thick,
+      .faqs-heading .header-italic,
+      .faq-question,
+      .graphik-bold,
+      .question-container .title-medium,
+      .question-container .title-medium div {
+        color: #1a1a1a !important;
+      }
+
+      .faq-sect .paragraph-small,
+      .faq-sect .paragraph-small div,
+      .faqs-container .paragraph-small,
+      .faqs-container .paragraph-small div,
+      .answer-container .paragraph-small,
+      .answer-container .paragraph-small div,
+      .answer-here p,
+      .answer-here div,
+      .faq-answer,
+      .faq-answer p {
+        color: #4a4a4a !important;
+      }
+
+      /* Start Today Popup Card / Price Bar */
+      .med-price-2 .paragraph-medium,
+      .med-price-2 .paragraph-medium em,
+      .price-bar .paragraph-medium,
+      .price-bar .paragraph-medium em,
+      .price-bar-content .paragraph-medium,
+      .price-bar-content .paragraph-medium em {
+        color: #1a1a1a !important;
+      }
+
+      .med-price-2 .paragraph-small,
+      .price-bar .paragraph-small,
+      .price-bar-content .paragraph-small,
+      .listed-items-price .paragraph-small {
+        color: #333333 !important;
+      }
+
+      .med-price-2 .caption,
+      .price-bar .caption,
+      .dark-caption {
+        color: #1a1a1a !important;
+      }
+
+      /* Sticky CTA Card */
+      .sticky-cta .title-medium,
+      .sticky-cta h2,
+      .sticky-cta h3 {
+        color: #1a1a1a !important;
+      }
+
+      .sticky-cta .paragraph-medium,
+      .sticky-cta p {
+        color: #333333 !important;
+      }
+
+      /* Banner CTA Section - Recommended Program */
+      .banner-wrap-2 .header-italic {
+        color: #1a1a1a !important;
+      }
+
+      .range-contain-2 .paragraph-medium {
+        color: #333333 !important;
+      }
+
+      .range-contain-2 .title-medium {
+        color: #10b981 !important;
+      }
+
+      /* Recommended Program dark box - white text for contrast */
+      .div-block-300 {
+        background: #1a1a1a;
+        border-radius: 50px;
+        padding: 20px 30px;
+      }
+
+      .div-block-300 .paragraph-medium {
+        color: #ffffff !important;
+        opacity: 0.9;
+      }
+
+      .div-block-300 .title-medium {
+        color: #10b981 !important;
+      }
+
+      /* Realz counter display */
+      .realz {
+        color: #10b981 !important;
+      }
+
+      /* Welcome Section Text */
+      .left-btf-landing .title-medium-italic {
+        color: #10b981 !important;
+      }
+
+      .left-btf-landing .paragraph-large {
+        color: #333333 !important;
+      }
+
+      /* How It Works Steps */
+      .stick-details .title-medium {
+        color: #1a1a1a !important;
+      }
+
+      .stick-details .paragraph-small {
+        color: #555555 !important;
+      }
+
+      /* Number circles */
+      .number-stroke {
+        border: 2px solid #10b981 !important;
+        color: #10b981 !important;
+      }
+
+      .number-stroke .paragraph-large {
+        color: #10b981 !important;
+      }
+
+      /* Benefits bar text */
+      .title-small-italic {
+        color: #10b981 !important;
+      }
+
+      /* ATF bars text */
+      .bar-block .title-medium {
+        color: #333333 !important;
+      }
+
+      /* Prefooter CTA text */
+      .prefooter-content .header-italic {
+        color: #ffffff !important;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5) !important;
+      }
+
+      .prefooter-content .paragraph-22 {
+        color: #f0f0f0 !important;
+      }
+
+      /* Floating Animation for Images */
+      .prod-atf-img-4 img {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      /* Pulsing CTA Buttons */
+      .green-button,
+      .green-button-2 {
+        animation: pulse-glow 2s ease-in-out infinite;
+      }
+
+      .green-button:hover,
+      .green-button-2:hover {
+        animation: none;
+      }
+
+      /* Global Button Enhancements */
+      .green-button,
+      .green-button-2,
+      .green-button-stay,
+      .green-button-stay-2,
+      .upgrade-btn {
+        background: var(--gradient-green) !important;
+        border-radius: 8px !important;
+        padding: 16px 32px !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1px !important;
+        box-shadow: var(--shadow-glow) !important;
+        transition: all 0.3s ease !important;
+        border: none !important;
+      }
+
+      .green-button:hover,
+      .green-button-2:hover,
+      .green-button-stay:hover,
+      .green-button-stay-2:hover,
+      .upgrade-btn:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 0 40px rgba(16, 185, 129, 0.5) !important;
+        background: linear-gradient(135deg, #34d399 0%, #10b981 100%) !important;
+      }
+
+      /* Navigation Button */
+      .nav-button {
+        background: var(--gradient-green) !important;
+        border-radius: 6px !important;
+        padding: 12px 24px !important;
+        font-weight: 600 !important;
+        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3) !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .nav-button:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 6px 25px rgba(16, 185, 129, 0.5) !important;
+      }
+
+      /* Hero Section Enhancements */
+      .header.left-align.lnading-header {
+        font-size: clamp(2.5rem, 5vw, 4rem) !important;
+        font-weight: 800 !important;
+        line-height: 1.1 !important;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) !important;
+      }
+
+      /* Section Backgrounds */
+      .section.burgundy {
+        background: linear-gradient(180deg, #0a2e1f 0%, #0f3d2a 50%, #0a2e1f 100%) !important;
+      }
+
+      .section.black-bg {
+        background: linear-gradient(180deg, #0f0f0f 0%, #1a1a1a 50%, #0f0f0f 100%) !important;
+      }
+
+      /* Program Cards */
+      .prod-cards,
+      .prod-cards-2 {
+        background: linear-gradient(145deg, #1a1a1a 0%, #252525 100%) !important;
+        border: 1px solid rgba(16, 185, 129, 0.2) !important;
+        border-radius: 16px !important;
+        box-shadow: var(--shadow-card) !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .prod-cards:hover,
+      .prod-cards-2:hover {
+        border-color: var(--primary-green) !important;
+        box-shadow: 0 15px 50px rgba(16, 185, 129, 0.2) !important;
+        transform: translateY(-5px) !important;
+      }
+
+      /* Stats Blocks */
+      .stats-block {
+        color: var(--primary-green) !important;
+        font-weight: 700 !important;
+      }
+
+      .caps-text {
+        color: var(--primary-green) !important;
+      }
+
+      /* Title Styling */
+      .title-medium,
+      .title-medium-italic {
+        color: var(--text-white) !important;
+      }
+
+      .title-smaller-thick {
+        color: var(--primary-green) !important;
+        font-weight: 700 !important;
+        letter-spacing: 2px !important;
+      }
+
+      /* Card Content */
+      .card-content-curved {
+        background: linear-gradient(145deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0.05) 100%) !important;
+        border: 1px solid rgba(16, 185, 129, 0.3) !important;
+        border-radius: 16px !important;
+      }
+
+      .card-content-coaching {
+        background: linear-gradient(145deg, rgba(249, 115, 22, 0.1) 0%, rgba(249, 115, 22, 0.05) 100%) !important;
+        border: 1px solid rgba(249, 115, 22, 0.3) !important;
+        border-radius: 16px !important;
+      }
+
+      /* Marquee/Banner */
+      .marquee {
+        background: var(--gradient-green) !important;
+      }
+
+      .text-block.is-button {
+        background: var(--primary-green-dark) !important;
+        border-radius: 4px !important;
+        padding: 8px 16px !important;
+      }
+
+      /* Review Boxes */
+      .review-boxes {
+        background: linear-gradient(145deg, #1a1a1a 0%, #222222 100%) !important;
+        border: 1px solid rgba(16, 185, 129, 0.15) !important;
+        border-radius: 12px !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .review-boxes:hover {
+        border-color: var(--primary-green) !important;
+        transform: translateY(-3px) !important;
+      }
+
+      /* Hollow Buttons */
+      .hollow-button,
+      .white-hollow-btn {
+        border: 2px solid var(--primary-green) !important;
+        color: var(--primary-green) !important;
+        border-radius: 8px !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .hollow-button:hover,
+      .white-hollow-btn:hover {
+        background: var(--primary-green) !important;
+        color: var(--dark-bg) !important;
+      }
+
+      /* ATF Bars */
+      .bar-block {
+        border-color: rgba(16, 185, 129, 0.3) !important;
+      }
+
+      .title-small-italic {
+        color: var(--primary-green) !important;
+        font-weight: 600 !important;
+      }
+
+      /* Number Strokes */
+      .number-stroke {
+        border-color: var(--primary-green) !important;
+        color: var(--primary-green) !important;
+      }
+
+      /* Links */
+      .link,
+      .link-text {
+        color: var(--primary-green) !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .link:hover,
+      .link-text:hover {
+        color: var(--primary-green-light) !important;
+      }
+
+      /* FAQ Styling */
+      .faqs-container {
+        border-color: rgba(16, 185, 129, 0.2) !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .faqs-container:hover {
+        border-color: var(--primary-green) !important;
+      }
+
+      .plus-icon {
+        background: var(--primary-green) !important;
+      }
+
+      /* Prefooter CTA */
+      .prefooter-wrapper {
+        border-radius: 20px !important;
+        overflow: hidden !important;
+      }
+
+      .cta-overlay {
+        background: linear-gradient(135deg, rgba(16, 185, 129, 0.8) 0%, rgba(5, 150, 105, 0.9) 100%) !important;
+      }
+
+      /* Footer */
+      .footer-link:hover,
+      .nav-footer-link:hover {
+        color: var(--primary-green) !important;
+      }
+
+      /* Ribbon/Badge */
+      .ribbon-img svg path {
+        fill: var(--primary-green) !important;
+      }
+
+      .yellow-font {
+        color: var(--primary-green) !important;
+      }
+
+      /* Slider Navigation */
+      .splide__arrow {
+        background: var(--primary-green) !important;
+      }
+
+      /* Check Marks */
+      .bullet-checks-prod {
+        background: var(--primary-green) !important;
+        border-radius: 50% !important;
+      }
+
+      /* Price Display */
+      .abcd-semimono-18,
+      .abcd-semimono-14 {
+        font-weight: 700 !important;
+      }
+
+      /* Ball Icon */
+      .ball-icon {
+        background: var(--gradient-green) !important;
+        border-radius: 50% !important;
+        padding: 15px !important;
+      }
+
+      /* Gold Stars */
+      .gold-stars-smaller img {
+        filter: brightness(1.2) !important;
+      }
+
       @media (min-width: 992px) {
         html.w-mod-js:not(.w-mod-ix) [data-w-id="b8f94930-42b7-b56c-5e34-42ab934ec19b"] {
-          background-color: rgb(33, 105, 74);
+          background-color: #10b981;
         }
       }
       @media (max-width: 991px) and (min-width: 768px) {
         html.w-mod-js:not(.w-mod-ix) [data-w-id="b8f94930-42b7-b56c-5e34-42ab934ec19b"] {
-          background-color: rgb(33, 105, 74);
+          background-color: #10b981;
         }
       }
     </style>
@@ -140,11 +659,11 @@
         <div id="new-nav-mobile" class="mobile-menu-block dropdown-menu-block">
           <div class="mobile-links-grid">
             <div id="w-node-f7e51e62-aa85-b63f-f554-5180fe6d7398-16566f8b" data-w-id="f7e51e62-aa85-b63f-f554-5180fe6d7398" class="mobile-menu-link">
-              <div id="w-node-f7e51e62-aa85-b63f-f554-5180fe6d7399-16566f8b" class="mobile-link-text mob-link-min">treatments</div>
+              <div id="w-node-f7e51e62-aa85-b63f-f554-5180fe6d7399-16566f8b" class="mobile-link-text mob-link-min">Programs</div>
               <div class="mobile-arrow"><img src="images/66f3d6891f510b6efa50c16f_%F0%9F%A6%86%20icon%20_right_.svg" loading="lazy" alt="" class="img" /></div>
             </div>
             <div id="w-node-_81a106dc-fcb3-452b-a9f1-c59e87d9c76c-16566f8b" data-w-id="81a106dc-fcb3-452b-a9f1-c59e87d9c76c" class="mobile-menu-link">
-              <div id="w-node-_81a106dc-fcb3-452b-a9f1-c59e87d9c76d-16566f8b" class="mobile-link-text mob-link-min">Why Avonn</div>
+              <div id="w-node-_81a106dc-fcb3-452b-a9f1-c59e87d9c76d-16566f8b" class="mobile-link-text mob-link-min">About Us</div>
               <div class="mobile-arrow"><img src="images/66f3d6891f510b6efa50c16f_%F0%9F%A6%86%20icon%20_right_.svg" loading="lazy" alt="" class="img" /></div>
             </div>
             <a href="" class="mobile-menu-link w-inline-block">
@@ -165,24 +684,31 @@
             </a>
           </div>
           <div class="bottom-mobile margin-top">
-            <a href="/quiz-promo" class="green-button-stay nav-button w-inline-block"><div class="button-text">Take the quiz</div></a>
-            <a href="/quiz-promo" class="green-button-stay continue-button w-inline-block"><div class="button-text">CONTINUE</div></a>
+            <a href="/shop" class="green-button-stay nav-button w-inline-block"><div class="button-text">Get Started</div></a>
+            <a href="/shop" class="green-button-stay continue-button w-inline-block"><div class="button-text">SHOP</div></a>
             <div class="hide-btns">
-              <a href="/quiz-promo" class="green-button-stay-2 nav-button-copy new-mobile-quiz w-inline-block"><div class="button-text">take the quiz</div></a>
-              <a href="/quiz-promo" class="green-button-stay-2 nav-button-copy w-inline-block"><div class="button-text">JOIN NOW</div></a>
+              <a href="/shop" class="green-button-stay-2 nav-button-copy new-mobile-quiz w-inline-block"><div class="button-text">get started</div></a>
+              <a href="/shop" class="green-button-stay-2 nav-button-copy w-inline-block"><div class="button-text">SHOP</div></a>
             </div>
             <div class="mobile-logo-here tab-size"><img src="images/avonn-logo.png" loading="lazy" alt="" class="img" /></div>
           </div>
           <div class="mobile-treat-slidein">
             <div data-w-id="8cd73aa6-d4ca-c238-8cbd-dfb573fe8392" class="mobile-menu-link link-title">
               <div class="mobile-arrow reversed-arrow"><img src="images/66f3d6891f510b6efa50c16f_%F0%9F%A6%86%20icon%20_right_.svg" loading="lazy" alt="" class="img" /></div>
-              <div id="w-node-_8cd73aa6-d4ca-c238-8cbd-dfb573fe8393-16566f8b" class="mobile-link-text">treatments</div>
+              <div id="w-node-_8cd73aa6-d4ca-c238-8cbd-dfb573fe8393-16566f8b" class="mobile-link-text">Programs</div>
             </div>
             <div class="mobile-treat-block">
-              <div class="mobile-menu-link"><div class="mobile-link-text mobile-link-title">Weight Loss</div></div>
-              <div class="mobile-menu-link"><div class="mobile-link-text mobile-link-title">Testosterone</div></div>
-              <a href="/testosterone-rejuvenation" class="mobile-menu-link w-inline-block">
-                <div id="w-node-_340fc97c-7ac8-389c-529e-edc19572a7bb-16566f8b" class="mobile-link-text treat-min">Enclomiphene</div>
+              <div class="mobile-menu-link"><div class="mobile-link-text mobile-link-title">Workout Programs</div></div>
+              <a href="/shop" class="mobile-menu-link w-inline-block">
+                <div id="w-node-_340fc97c-7ac8-389c-529e-edc19572a7bb-16566f8b" class="mobile-link-text treat-min">Fit in 20 Minutes</div>
+                <div class="mobile-arrow"><img src="images/66f3d6891f510b6efa50c16f_%F0%9F%A6%86%20icon%20_right_.svg" loading="lazy" alt="" class="img" /></div>
+              </a>
+              <a href="/shop" class="mobile-menu-link w-inline-block">
+                <div class="mobile-link-text treat-min">Fit in 40 Minutes</div>
+                <div class="mobile-arrow"><img src="images/66f3d6891f510b6efa50c16f_%F0%9F%A6%86%20icon%20_right_.svg" loading="lazy" alt="" class="img" /></div>
+              </a>
+              <a href="/shop" class="mobile-menu-link w-inline-block">
+                <div class="mobile-link-text treat-min">Recovery in 40 Minutes</div>
                 <div class="mobile-arrow"><img src="images/66f3d6891f510b6efa50c16f_%F0%9F%A6%86%20icon%20_right_.svg" loading="lazy" alt="" class="img" /></div>
               </a>
             </div>
@@ -190,12 +716,12 @@
           <div class="why-treat-slidein">
             <div data-w-id="727321ac-2272-241e-1ed6-89728c5b6a6d" class="mobile-menu-link link-title">
               <div class="mobile-arrow reversed-arrow"><img src="images/66f3d6891f510b6efa50c16f_%F0%9F%A6%86%20icon%20_right_.svg" loading="lazy" alt="" class="img" /></div>
-              <div id="w-node-_727321ac-2272-241e-1ed6-89728c5b6a70-16566f8b" class="mobile-link-text">Why Avonn</div>
+              <div id="w-node-_727321ac-2272-241e-1ed6-89728c5b6a70-16566f8b" class="mobile-link-text">About Us</div>
             </div>
             <div class="mobile-treat-block">
-              <div class="mobile-menu-link"><div class="mobile-link-text mobile-link-title">Why Avonn</div></div>
+              <div class="mobile-menu-link"><div class="mobile-link-text mobile-link-title">About Us</div></div>
               <a href="/reviews" class="mobile-menu-link w-inline-block">
-                <div id="w-node-c79b5739-da4a-2e81-c182-22ecdbd96676-16566f8b" class="mobile-link-text treat-min">Reviews</div>
+                <div id="w-node-c79b5739-da4a-2e81-c182-22ecdbd96676-16566f8b" class="mobile-link-text treat-min">Success Stories</div>
                 <div class="mobile-arrow"><img src="images/66f3d6891f510b6efa50c16f_%F0%9F%A6%86%20icon%20_right_.svg" loading="lazy" alt="" class="img" /></div>
               </a>
               <a href="/faq" class="mobile-menu-link w-inline-block">
@@ -207,14 +733,14 @@
         </div>
         <div id="current-nav-mobile" class="mobile-menu-block current-menu-block">
           <div class="mobile-links-grid">
-            <a id="w-node-_2536df9d-a936-1974-7925-80739a99309f-16566f8b" href="/the-science" class="mobile-menu-link w-inline-block">
-              <div id="w-node-_2536df9d-a936-1974-7925-80739a9930a0-16566f8b" class="mobile-link-text">the science</div>
+            <a id="w-node-_2536df9d-a936-1974-7925-80739a99309f-16566f8b" href="/shop" class="mobile-menu-link w-inline-block">
+              <div id="w-node-_2536df9d-a936-1974-7925-80739a9930a0-16566f8b" class="mobile-link-text">Programs</div>
             </a>
-            <a id="w-node-_2536df9d-a936-1974-7925-80739a9930a2-16566f8b" href="/treatments" class="mobile-menu-link w-inline-block">
-              <div id="w-node-_2536df9d-a936-1974-7925-80739a9930a3-16566f8b" class="mobile-link-text">Treatments</div>
+            <a id="w-node-_2536df9d-a936-1974-7925-80739a9930a2-16566f8b" href="/reviews" class="mobile-menu-link w-inline-block">
+              <div id="w-node-_2536df9d-a936-1974-7925-80739a9930a3-16566f8b" class="mobile-link-text">Success Stories</div>
             </a>
-            <a id="w-node-_2536df9d-a936-1974-7925-80739a9930a8-16566f8b" href="/reviews" class="mobile-menu-link w-inline-block">
-              <div id="w-node-_2536df9d-a936-1974-7925-80739a9930a9-16566f8b" class="mobile-link-text">Reviews</div>
+            <a id="w-node-_2536df9d-a936-1974-7925-80739a9930a8-16566f8b" href="/coaching" class="mobile-menu-link w-inline-block">
+              <div id="w-node-_2536df9d-a936-1974-7925-80739a9930a9-16566f8b" class="mobile-link-text">Coaching</div>
             </a>
             <a id="w-node-_2536df9d-a936-1974-7925-80739a9930ab-16566f8b" href="/faq" class="mobile-menu-link w-inline-block">
               <div id="w-node-_2536df9d-a936-1974-7925-80739a9930ac-16566f8b" class="mobile-link-text">FAQ</div>
@@ -237,11 +763,11 @@
             </a>
           </div>
           <div class="bottom-mobile margin-top">
-            <a href="/quiz-promo" class="green-button-stay nav-button w-inline-block"><div class="button-text">Take the quiz</div></a>
-            <a href="/quiz-promo" class="green-button-stay continue-button w-inline-block"><div class="button-text">CONTINUE</div></a>
+            <a href="/shop" class="green-button-stay nav-button w-inline-block"><div class="button-text">Get Started</div></a>
+            <a href="/shop" class="green-button-stay continue-button w-inline-block"><div class="button-text">SHOP</div></a>
             <div class="hide-btns">
-              <a href="/quiz-promo" class="green-button-stay-2 nav-button-copy new-mobile-quiz w-inline-block"><div class="button-text">take the quiz</div></a>
-              <a href="/quiz-promo" class="green-button-stay-2 nav-button-copy w-inline-block"><div class="button-text">JOIN NOW</div></a>
+              <a href="/shop" class="green-button-stay-2 nav-button-copy new-mobile-quiz w-inline-block"><div class="button-text">get started</div></a>
+              <a href="/shop" class="green-button-stay-2 nav-button-copy w-inline-block"><div class="button-text">SHOP</div></a>
             </div>
             <div class="mobile-logo-here tab-size"><img loading="lazy" src="images/avonn-logo.png" alt="" class="img" /></div>
           </div>
@@ -418,32 +944,32 @@
         <div class="label-small banner-heading-size">My account</div>
       </a>
     </div>
-    <a data-w-id="b8f94930-42b7-b56c-5e34-42ab934ec17a" href="/quiz-promo" class="marquee w-inline-block">
+    <a data-w-id="b8f94930-42b7-b56c-5e34-42ab934ec17a" href="/shop" class="marquee w-inline-block">
       <div class="marquee-content scroll">
-        <div class="text-block">6-month money-back guarantee</div>
-        <div class="text-block">Free personalized health coaching</div>
+        <div class="text-block">Instant download eBooks</div>
+        <div class="text-block">Free personalized coaching</div>
         <div class="text-block">
-          No hidden charges
+          Community support
           <br />
         </div>
-        <div class="text-block is-mobile-hidden">6-month money-back guarantee</div>
-        <div class="text-block is-mobile-hidden">Free personalized health coaching</div>
+        <div class="text-block is-mobile-hidden">Instant download eBooks</div>
+        <div class="text-block is-mobile-hidden">Free personalized coaching</div>
         <div class="text-block is-mobile-hidden">
-          No hidden charges
+          Community support
           <br />
         </div>
       </div>
       <div class="marquee-content scroll">
-        <div class="text-block">6-month money-back guarantee</div>
-        <div class="text-block">Free personalized health coaching</div>
+        <div class="text-block">Instant download eBooks</div>
+        <div class="text-block">Free personalized coaching</div>
         <div class="text-block">
-          No hidden charges
+          Community support
           <br />
         </div>
-        <div class="text-block is-mobile-hidden">6-month money-back guarantee</div>
-        <div class="text-block is-mobile-hidden">Free personalized health coaching</div>
+        <div class="text-block is-mobile-hidden">Instant download eBooks</div>
+        <div class="text-block is-mobile-hidden">Free personalized coaching</div>
         <div class="text-block is-mobile-hidden">
-          No hidden charges
+          Community support
           <br />
         </div>
       </div>
@@ -473,12 +999,12 @@
       </div>
       <div class="marquee-mask is-right">
         <div data-w-id="b8f94930-42b7-b56c-5e34-42ab934ec19b" class="text-block is-button">
-          TAKE THE QUIZ
+          GET STARTED
           <strong>→</strong>
         </div>
       </div>
       <div class="marquee-mask">
-        <div class="text-block">Why Avonn?</div>
+        <div class="text-block">About Us</div>
         <div class="marquee-left-mask"></div>
       </div>
     </a>
@@ -490,39 +1016,41 @@
         <div class="logo-mid-bar hide">
           <a href="/" aria-current="page" class="nav-logo hidenavlogo w-inline-block w--current"><img src="images/avonn-logo.png" loading="lazy" alt="" class="img" /></a>
           <div class="nav-dropdown-block">
-            <div class="nav-link prod-link">Why Avonn</div>
+            <div class="nav-link prod-link">About Us</div>
             <div class="nav-dropdown-arrow"><img src="images/66f39d40b5840f6eb73855ef_%F0%9F%A6%86%20icon%20_down_.svg" loading="lazy" alt="" class="img" /></div>
             <div class="dropdown-wrapper why-dd">
-              <a href="/faq" class="nav-link-dropdown">faq</a>
-              <a href="/reviews" class="nav-link-dropdown">reviews</a>
+              <a href="/faq" class="nav-link-dropdown">FAQ</a>
+              <a href="/reviews" class="nav-link-dropdown">Success Stories</a>
             </div>
           </div>
           <div class="nav-dropdown-block">
-            <div class="nav-link prod-link">Treatments</div>
+            <div class="nav-link prod-link">Programs</div>
             <div class="nav-dropdown-arrow"><img src="images/66f39d40b5840f6eb73855ef_%F0%9F%A6%86%20icon%20_down_.svg" loading="lazy" alt="" class="img" /></div>
             <div class="dropdown-wrapper treatments-dd">
               <div class="treatment-links-here">
                 <div class="treat-dropdown-block middle treat-links">
-                  <div class="nav-link prod-link navlink-title">Testosterone</div>
-                  <a href="/testosterone-rejuvenation" class="nav-link-dropdown dropdown-enclo">Enclomiphene</a>
+                  <div class="nav-link prod-link navlink-title">Workout Programs</div>
+                  <a href="/shop" class="nav-link-dropdown dropdown-enclo">Fit in 20 Minutes</a>
+                  <a href="/shop" class="nav-link-dropdown dropdown-enclo">Fit in 40 Minutes</a>
+                  <a href="/shop" class="nav-link-dropdown dropdown-enclo">Recovery in 40 Minutes</a>
                 </div>
                 <div class="treat-dropdown-block right">
                   <div dd-enclo="" class="treatment-hover-block dropdown-enclo">
                     <div class="treat-dd-image">
                       <img src="images/65320870b27b3ea595643e4b_PillBotTes.webp" alt="" class="img" />
                     </div>
-                    <div class="nav-link-dropdown prod-link nohover reduce-opac">Enclomiphene</div>
-                    <p class="nav-par-small">Improve muscle mass, energy, mood & productivity</p>
+                    <div class="nav-link-dropdown prod-link nohover reduce-opac">Digital Programs</div>
+                    <p class="nav-par-small">Structured workouts, nutrition plans & instant access</p>
                   </div>
                 </div>
               </div>
-              <div class="view-all"><a href="/treatments" class="nav-link-dropdown">View All</a></div>
+              <div class="view-all"><a href="/shop" class="nav-link-dropdown">View All Programs</a></div>
             </div>
           </div>
         </div>
         <div class="nav-right hide-tab">
-          <a href="/quiz-promo" class="nav-button w-inline-block"><div class="nav-button-text">TAKE THE QUIZ</div></a>
-          <a href="/quiz-promo" class="nav-button continue-button w-inline-block"><div class="nav-button-text">CONTINUE</div></a>
+          <a href="/shop" class="nav-button w-inline-block"><div class="nav-button-text">GET STARTED</div></a>
+          <a href="/shop" class="nav-button continue-button w-inline-block"><div class="nav-button-text">SHOP</div></a>
         </div>
         <a data-w-id="49350e44-de8c-24e0-f5a6-45885287c271" href="#" class="burger-menu push-right new-burger w-inline-block">
           <img src="images/62b6e9b23606cf0f799ec7f2_Burger%20Menu.svg" loading="lazy" alt="" class="img burger" />
@@ -531,16 +1059,16 @@
       </div>
       <div id="current-nav-desktop" class="navbar navbar-current">
         <div class="nav-left hide-tab">
-          <a href="/treatments" class="nav-link">Treatments</a>
-          <a href="/reviews" class="nav-link">Reviews</a>
+          <a href="/shop" class="nav-link">Programs</a>
+          <a href="/reviews" class="nav-link">Success Stories</a>
         </div>
         <div class="logo-mid-bar hide">
           <a href="/" aria-current="page" class="nav-logo w-inline-block w--current"><img loading="lazy" src="images/avonn-logo.png" alt="" class="img" /></a>
         </div>
         <div class="nav-right hide-tab">
           <a href="/referral-program" class="nav-link refer-link">Refer a Friend</a>
-          <a href="/promo-quiz-nla" class="nav-button w-inline-block"><div class="nav-button-text">TAKE THE QUIZ</div></a>
-          <a href="/promo-quiz-nla" class="nav-button continue-button w-inline-block"><div class="nav-button-text">CONTINUE</div></a>
+          <a href="/shop" class="nav-button w-inline-block"><div class="nav-button-text">GET STARTED</div></a>
+          <a href="/shop" class="nav-button continue-button w-inline-block"><div class="nav-button-text">SHOP</div></a>
         </div>
         <a href="#" class="burger-menu push-right current-burger w-inline-block">
           <img loading="lazy" src="images/62b6e9b23606cf0f799ec7f2_Burger%20Menu.svg" alt="" class="img burger" />
@@ -555,7 +1083,7 @@
         }
 
         .stats-block {
-          color: #ffc43b;
+          color: #10b981 !important;
         }
       </style>
     </div>
@@ -564,19 +1092,18 @@
         <div class="about-atf-content landing-topper">
           <div class="system-left-block wider-atf-header-3">
             <h1 class="header left-align lnading-header">
-              Medication
+              The SMARTER Way to
               <br />
-              WEIGHT LOSS
+              GET FIT IN Less
               <br />
-
-              <span class="cursive">for bigger guys</span>
+              Time
             </h1>
             <div class="prod-atf-img-4 reduce-fit">
-              <img src="images/avonn-vertical.jpg" alt="" class="img no-click" />
+              <img src="images/avonn-vertical.jpg" alt="Fitness training" class="img no-click" style="border-radius: 16px; object-fit: cover" />
             </div>
-            <div class="paragraph-landing-block"><p class="paragraph-large">Weight loss treatments to help time-crunched men achieve real, lasting results.</p></div>
+            <div class="paragraph-landing-block"><p class="paragraph-large">Avonn eBooks give you structured workouts and simple nutrition you can start today. Instant download. Real results.</p></div>
             <div class="div-block-298">
-              <a href="/promo-quiz-nla" class="green-button w-inline-block"><div class="button-text">get started</div></a>
+              <a href="/shop" class="green-button w-inline-block"><div class="button-text">Get Started</div></a>
             </div>
             <div class="prod-atf-left reviews-atf-bot">
               <div class="yotpo-logo-top">
@@ -601,10 +1128,19 @@
             </div>
           </div>
           <div class="right-area-stretch">
-            <div class="prod-atf-right landing-logos-atf-2 logos-full-width">
-              <div class="gw"><img src="images/62b50390b9104cd6d71c23dc_CBS.svg" loading="lazy" alt="" class="img contain" /></div>
-              <div class="fitt invert-color yahoo-adjust-logo reverse-invert nyt-logp"><img src="images/6629ae3d987053a1dfb29c70_image%208.webp" loading="lazy" alt="" class="img contain" /></div>
-              <div class="curative invert-color techcrunch-adjust-logo reverse-invert"><img src="images/62b50391feeafe0e891c515d_NBC.svg" loading="lazy" alt="" class="img contain" /></div>
+            <div class="prod-atf-right landing-logos-atf-2 logos-full-width" style="display: flex; gap: 20px; align-items: center; justify-content: center">
+              <div style="text-align: center; padding: 10px 15px; background: rgba(16, 185, 129, 0.1); border-radius: 8px; border: 1px solid rgba(16, 185, 129, 0.3)">
+                <div style="font-size: 24px; font-weight: 700; color: #10b981">10K+</div>
+                <div style="font-size: 12px; color: #a0a0a0; text-transform: uppercase; letter-spacing: 1px">Downloads</div>
+              </div>
+              <div style="text-align: center; padding: 10px 15px; background: rgba(16, 185, 129, 0.1); border-radius: 8px; border: 1px solid rgba(16, 185, 129, 0.3)">
+                <div style="font-size: 24px; font-weight: 700; color: #10b981">4.9★</div>
+                <div style="font-size: 12px; color: #a0a0a0; text-transform: uppercase; letter-spacing: 1px">Rating</div>
+              </div>
+              <div style="text-align: center; padding: 10px 15px; background: rgba(16, 185, 129, 0.1); border-radius: 8px; border: 1px solid rgba(16, 185, 129, 0.3)">
+                <div style="font-size: 24px; font-weight: 700; color: #10b981">100%</div>
+                <div style="font-size: 12px; color: #a0a0a0; text-transform: uppercase; letter-spacing: 1px">Guarantee</div>
+              </div>
             </div>
           </div>
         </div>
@@ -613,20 +1149,20 @@
         <div class="top-bar">
           <div id="w-node-_564a6396-d55d-1f55-0db7-fa7363f7b04b-27c9e69f" class="bar-block side-borders-zero">
             <div class="title-small-italic">
-              Get healthier
+              Build Strength
               <br />
             </div>
           </div>
-          <div id="w-node-_6b3e3898-32e0-732f-c35b-ecb9cb92027b-27c9e69f" class="bar-block"><div class="title-small-italic">More energy</div></div>
+          <div id="w-node-_6b3e3898-32e0-732f-c35b-ecb9cb92027b-27c9e69f" class="bar-block"><div class="title-small-italic">Burn Fat</div></div>
           <div id="w-node-a90303f4-41d6-75f0-386c-93b6b3460082-27c9e69f" class="bar-block side-borders-zero hide-mobile">
             <div class="title-small-italic">
-              Gain confidence
+              Transform Your Body
               <br />
             </div>
           </div>
         </div>
         <div class="bottom-bar">
-          <div id="w-node-_8c795157-fe9c-63e5-f678-1f655066097e-27c9e69f" class="bar-block left-border-zero"><div class="title-medium smaller-mobile-thick">Built for men with busy lifestyles</div></div>
+          <div id="w-node-_8c795157-fe9c-63e5-f678-1f655066097e-27c9e69f" class="bar-block left-border-zero"><div class="title-medium smaller-mobile-thick">Train anytime, anywhere</div></div>
           <div id="w-node-_5188c9d3-6bf3-cf3c-9fb4-42ced3cd64f9-27c9e69f" class="bar-block top-border-zero"><div class="title-medium smaller-mobile-thick">💰Money-back guarantee</div></div>
         </div>
       </div>
@@ -634,42 +1170,49 @@
     <section class="section">
       <div class="container landing-btf">
         <div class="left-btf-landing">
-          <div class="paragraph-small">💪 The #1 program built for men</div>
-          <div class="title-hold-btf"><h2 class="title-medium-italic smaller-responsive">Treatments built for bigger guys</h2></div>
-          <p class="paragraph-large">Get the assessments, support, and medication you need to live a healthy life, tailored to your body.</p>
+          <div class="paragraph-small">Welcome</div>
+          <div class="title-hold-btf"><h2 class="title-medium-italic smaller-responsive">DEDICATED TO TRANSFORMING YOUR HEALTH</h2></div>
+          <p class="paragraph-large">
+            At Avonn, we keep fitness simple and effective. Our digital eBooks combine structured workouts, high-protein nutrition, and guided recovery, crafted by Avonn. Download, follow the plan, and train anytime,
+            anywhere.
+          </p>
           <div class="div-block-329">
-            <a href="/promo-quiz-nla" class="green-button w-inline-block"><div class="button-text">take the quiz</div></a>
+            <a href="/shop" class="green-button w-inline-block"><div class="button-text">About Us</div></a>
           </div>
         </div>
         <div class="right-btf-landing">
           <div id="w-node-_06b14eaf-dc1e-4802-66c7-6030e902963d-27c9e69f" class="stick-divs">
-            <div class="image-stick ur-curve"><img src="images/65b9a93079e0a0c397f98164_Phoe%20Hold%20App.webp" loading="lazy" alt="" class="img" /></div>
+            <div class="image-stick ur-curve">
+              <img src="images/65b9a93079e0a0c397f98164_Phoe%20Hold%20App.webp" loading="lazy" alt="Choose your fitness program" class="img" style="object-fit: cover; border-radius: 12px" />
+            </div>
             <div class="stick-details">
               <div class="number-stroke"><div class="paragraph-large">1</div></div>
-              <h3 class="title-medium space-below-mob-on-l">take the quiz</h3>
-              <p class="paragraph-small">Take the 2-min assessment quiz to get pre-approved instantly.</p>
+              <h3 class="title-medium space-below-mob-on-l">Choose Your Program</h3>
+              <p class="paragraph-small">Select from Fit in 20 Minutes or Fit in 40 Minutes - programs designed to fit your schedule and goals.</p>
             </div>
           </div>
           <div id="w-node-_5790fb02-980c-c024-4073-a2232dbaaf06-27c9e69f" class="stick-divs">
-            <div class="image-stick ul-curve"><img src="images/6526369fd923b93fe254bbce_RecipeOnline2.webp" loading="lazy" alt="" class="img" /></div>
+            <div class="image-stick ul-curve">
+              <img src="images/6526369fd923b93fe254bbce_RecipeOnline2.webp" loading="lazy" alt="Download your fitness eBook" class="img" style="object-fit: cover; border-radius: 12px" />
+            </div>
             <div class="stick-details">
               <div class="number-stroke"><div class="paragraph-large">2</div></div>
-              <h3 class="title-medium space-below-mob-on-l">CHOOSE YOUR PLAN</h3>
+              <h3 class="title-medium space-below-mob-on-l">Download Your eBook</h3>
               <p class="paragraph-small">
-                <a href="/treatments" class="link">See your GLP-1 treatment options</a>
-                and choose the best plan for you
+                <a href="/shop" class="link">Get instant access</a>
+                to your complete workout guide, meal plans, and recovery protocols. No waiting, start today.
               </p>
             </div>
           </div>
           <div id="w-node-_2a2a3f86-44f0-cfaf-f440-850fed9ea453-27c9e69f" class="stick-divs">
             <div class="image-stick lr-curve">
-              <img src="images/66123be928401c6ad24bd85f_Replace-Image-24.webp" width="512" alt="" class="img" />
+              <img src="images/66123be928401c6ad24bd85f_Replace-Image-24.webp" width="512" alt="Start training today" class="img" style="object-fit: cover; border-radius: 12px" />
             </div>
             <div class="stick-details">
               <div class="number-stroke"><div class="paragraph-large">3</div></div>
-              <h3 class="title-medium space-below-mob-on-l">RECEIVE YOUR MEDICATION</h3>
+              <h3 class="title-medium space-below-mob-on-l">Start Training Today</h3>
               <p class="paragraph-small">
-                Delivered to your home, with an uninterrupted supply of medication, with no extra costs.
+                Access your workouts, nutrition plans, and join our private community for support and accountability. Everything you need to transform your fitness.
                 <br />
                 <br />
               </p>
@@ -681,8 +1224,8 @@
     <section class="section burgundy sect-curved-top">
       <div class="container-content-slider">
         <div class="container stretch-cont">
-          <div class="title-div-line"><div class="title-smaller-thick">Avonn MEDICATION</div></div>
-          <div class="content-left-slider"><h2 class="title-medium-italic">Weight loss treatments for you</h2></div>
+          <div class="title-div-line"><div class="title-smaller-thick">Services</div></div>
+          <div class="content-left-slider"><h2 class="title-medium-italic">Helping you reach higher and achieve more</h2></div>
           <div class="div-block-332">
             <div class="contain-slider-side">
               <div class="content-left-block">
@@ -696,19 +1239,15 @@
                       </svg>
                     </div>
                   </div>
-                  <div class="card-q"><h4 class="title-smaller-italic is-graphik">Unsure? Find the ideal treatment!</h4></div>
-                  <p class="inter-15 less-opac-70">Answer a few simple questions and find the right treatment for you.</p>
+                  <div class="card-q"><h4 class="title-smaller-italic is-graphik">DIGITAL PROGRAMS</h4></div>
+                  <p class="inter-15 less-opac-70">Choose from our structured plans – Fit in 20 Minutes or Fit in 40 Minutes – designed to fit any lifestyle and deliver results fast.</p>
                   <div class="div-block-330">
-                    <a href="/quiz-promo" class="hollow-button white-hollow-btn w-inline-block"><div class="button-text">TAKE THE QUIZ</div></a>
+                    <a href="/shop" class="hollow-button white-hollow-btn w-inline-block"><div class="button-text">VIEW PROGRAMS</div></a>
                   </div>
                 </div>
                 <div class="card-content-coaching">
-                  <h4 class="title-smaller-italic is-graphik">
-                    Free personalized
-                    <br />
-                    health coaching
-                  </h4>
-                  <p class="inter-15 less-opac-70">You will have comprehensive health support from our experts throughout your wellness journey.</p>
+                  <h4 class="title-smaller-italic is-graphik">1-TO-1 COACHING</h4>
+                  <p class="inter-15 less-opac-70">Get personalised digital coaching with guidance, accountability, and support tailored to your goals. Delivered online, wherever you are.</p>
                 </div>
               </div>
               <div class="cover-slider-bg"></div>
@@ -719,284 +1258,144 @@
                   <div class="prod-grid splide__list no-gap">
                     <div class="splide__slide conain-slides is-mobile-full">
                       <div class="prod-cards-2 is-mobile-full is-relative">
-                        <h3 class="title-medium">Weight Loss</h3>
+                        <h3 class="title-medium">FIT IN 20 MINUTES</h3>
                         <div class="card-breaker-2">
-                          <div class="inline__wrapper"><div class="small-italic">Tailored treatment + comprehensive support</div></div>
+                          <div class="inline__wrapper"><div class="small-italic">Quick, efficient workouts for busy schedules</div></div>
                           <div class="card-line-break-2"></div>
                         </div>
-                        <div class="product-image-block-2"><img loading="lazy" src="images/686f08b6f522206232099f01_20-wl-programme.avif" alt="" class="prod-float-img" /></div>
+                        <div class="product-image-block-2">
+                          <img loading="lazy" src="images/686f08b6f522206232099f01_20-wl-programme.avif" alt="20 minute workout program" class="prod-float-img" style="border-radius: 12px" />
+                        </div>
                         <div class="descr-prod">
                           <div class="bullets-prod-card">
                             <div class="bullets-block">
                               <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Sustainable weight loss results</div>
+                              <div class="inter-15">20-minute structured workouts</div>
                             </div>
                             <div class="bullets-block">
                               <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
                               <div class="inter-15">
-                                Science-backed treatment
+                                High-protein nutrition plans
                                 <br />
                               </div>
                             </div>
                             <div class="bullets-block">
                               <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Appetite control and blood sugar regulation</div>
+                              <div class="inter-15">Instant digital download</div>
                             </div>
                             <div class="bullets-block">
                               <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Medication shipped to your home</div>
+                              <div class="inter-15">Community support access</div>
                             </div>
                           </div>
                         </div>
                         <div class="prod-btn-set-2">
-                          <a href="/quiz-promo-br" class="upgrade-btn green-upgrade-btn w-inline-block">
-                            <div class="inline-wrapper"><div class="abcd-semimono-14 ems-abcd is-inline">Check Eligibility</div></div>
+                          <a href="/shop" class="upgrade-btn green-upgrade-btn w-inline-block">
+                            <div class="inline-wrapper"><div class="abcd-semimono-14 ems-abcd is-inline">Buy Now</div></div>
                           </a>
-                          <a
-                            data-six-monthly-price-total="534"
-                            data-type-remove="tirzepatide"
-                            data-monthly-price="99"
-                            data-six-monthly-price="89"
-                            href="#"
-                            class="add-cart-btn-2 full-width-btn black-bg-btn remove-addons w-inline-block">
-                            <div class="abcd-semimono-18">REMOVE tirzepatide</div>
+                          <a href="/shop" class="add-cart-btn-2 full-width-btn black-bg-btn remove-addons w-inline-block">
+                            <div class="abcd-semimono-18">£169.99</div>
                           </a>
                         </div>
                       </div>
                     </div>
                     <div id="w-node-_228a61d7-2790-688e-ba1a-c6dfc98a015b-27c9e69f" class="splide__slide conain-slides">
                       <div class="prod-cards keep-with-mobile">
-                        <h3 class="title-medium">Enclomiphene</h3>
+                        <h3 class="title-medium">FIT IN 40 MINUTES</h3>
                         <div class="card-breaker-2">
-                          <div class="small-italic">2-3x your testosterone levels</div>
+                          <div class="small-italic">Comprehensive strength and conditioning</div>
                           <div class="card-line-break"></div>
                         </div>
                         <div class="product-image-block-2">
-                          <img src="images/655dc4c1c2a73024efc01f05_testo.webp" alt="" class="float-image" />
+                          <img src="images/655dc4c1c2a73024efc01f05_testo.webp" alt="40 minute strength training" class="float-image" style="border-radius: 12px" />
                         </div>
                         <div class="descr-prod">
                           <div class="bullets-prod-card">
                             <div class="bullets-block">
                               <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Maintain fertility</div>
+                              <div class="inter-15">40-minute structured sessions</div>
                             </div>
                             <div class="bullets-block">
                               <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Increase lean muscle mass</div>
+                              <div class="inter-15">Build strength and accelerate fat loss</div>
                             </div>
                             <div class="bullets-block">
                               <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Improved energy and mood</div>
+                              <div class="inter-15">Complete nutrition guidance</div>
                             </div>
                             <div class="bullets-block">
                               <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
                               <div class="inter-15">
-                                Increase levels of productivity
+                                Improve performance and endurance
                                 <br />
                               </div>
                             </div>
                             <div class="bullets-block">
                               <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Enhance sexual performance</div>
+                              <div class="inter-15">Instant digital access</div>
                             </div>
                           </div>
                         </div>
                         <div class="prod-btn-set-2">
-                          <a
-                            data-six-monthly-price-total="534"
-                            data-type-add="tirzepatide"
-                            data-monthly-price="99"
-                            data-six-monthly-price="89"
-                            href="/testosterone-rejuvenation"
-                            class="upgrade-btn green-upgrade-btn w-inline-block">
+                          <a href="/shop" class="upgrade-btn green-upgrade-btn w-inline-block">
                             <div class="inline-wrapper">
-                              <div class="abcd-semimono-14 ems-abcd is-inline">from </div>
-                              <div class="abcd-semimono-14 ems-abcd is-inline inline-child"><div>$149</div></div>
-                              <div class="abcd-semimono-14 ems-abcd is-inline">/mo</div>
+                              <div class="abcd-semimono-14 ems-abcd is-inline">Buy Now</div>
                             </div>
                           </a>
-                          <a
-                            data-six-monthly-price-total="534"
-                            data-type-remove="tirzepatide"
-                            data-monthly-price="99"
-                            data-six-monthly-price="89"
-                            href="#"
-                            class="add-cart-btn full-width-btn black-bg-btn remove-addons w-inline-block">
-                            <div class="abcd-semimono-14">REMOVE tirzepatide</div>
+                          <a href="/shop" class="add-cart-btn full-width-btn black-bg-btn remove-addons w-inline-block">
+                            <div class="abcd-semimono-14">£259.99</div>
                           </a>
-                          <div data-six-monthly-price-total="534" data-type-add="tirzepatide" data-monthly-price="99" data-six-monthly-price="89" class="learn-btn2">
-                            <div class="abcd-semimono-11-em green-mono normal-abcd">Medication cost included</div>
+                          <div class="learn-btn2">
+                            <div class="abcd-semimono-11-em green-mono normal-abcd">Instant download</div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="splide__slide conain-slides">
                       <div class="prod-cards keep-with-mobile">
-                        <h3 class="title-medium">Metformin</h3>
+                        <h3 class="title-medium">RECOVERY IN 40 MINUTES</h3>
                         <div class="card-breaker-2">
-                          <div class="small-italic">Longevity | Anti-aging</div>
+                          <div class="small-italic">Mobility, flexibility & balance</div>
                           <div class="card-line-break"></div>
                         </div>
                         <div class="product-image-block-2">
-                          <img src="images/6724317af038560468e06f91_Fella_Metformin.avif" alt="" class="float-image" />
+                          <img src="images/6724317af038560468e06f91_Fella_Metformin.avif" alt="Recovery and stretching program" class="float-image" style="border-radius: 12px" />
                         </div>
                         <div class="descr-prod">
                           <div class="bullets-prod-card">
                             <div class="bullets-block">
                               <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Enhanced metabolic health</div>
+                              <div class="inter-15">Guided recovery protocols</div>
                             </div>
                             <div class="bullets-block">
                               <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Potential anti-aging effects</div>
+                              <div class="inter-15">Mobility and flexibility training</div>
                             </div>
                             <div class="bullets-block">
                               <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Complement to weight management</div>
+                              <div class="inter-15">Reduce stress and improve balance</div>
                             </div>
                             <div class="bullets-block">
                               <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Reduced risk of age-related diseases</div>
+                              <div class="inter-15">Feel recharged and refreshed</div>
                             </div>
                             <div class="bullets-block">
                               <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Lower blood sugar levels</div>
+                              <div class="inter-15">Complete recovery guide included</div>
                             </div>
                           </div>
                         </div>
                         <div class="prod-btn-set-2">
-                          <a data-six-monthly-price-total="534" data-type-add="tirzepatide" data-monthly-price="99" data-six-monthly-price="89" href="/metformin" class="upgrade-btn green-upgrade-btn w-inline-block">
+                          <a href="/shop" class="upgrade-btn green-upgrade-btn w-inline-block">
                             <div class="inline-wrapper">
-                              <div class="abcd-semimono-14 ems-abcd is-inline">from </div>
-                              <div class="abcd-semimono-14 ems-abcd is-inline inline-child"><div>$45</div></div>
-                              <div class="abcd-semimono-14 ems-abcd is-inline">/mo</div>
+                              <div class="abcd-semimono-14 ems-abcd is-inline">Buy Now</div>
                             </div>
                           </a>
-                          <a
-                            data-six-monthly-price-total="534"
-                            data-type-remove="tirzepatide"
-                            data-monthly-price="99"
-                            data-six-monthly-price="89"
-                            href="#"
-                            class="add-cart-btn full-width-btn black-bg-btn remove-addons w-inline-block">
-                            <div class="abcd-semimono-14">REMOVE tirzepatide</div>
+                          <a href="/shop" class="add-cart-btn full-width-btn black-bg-btn remove-addons w-inline-block">
+                            <div class="abcd-semimono-14">£129.99</div>
                           </a>
-                          <div data-six-monthly-price-total="534" data-type-add="tirzepatide" data-monthly-price="99" data-six-monthly-price="89" class="learn-btn2">
-                            <div class="abcd-semimono-11-em green-mono normal-abcd">Medication cost included</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="splide__slide conain-slides">
-                      <div class="prod-cards keep-with-mobile">
-                        <h3 class="title-medium">Rapamycin</h3>
-                        <div class="card-breaker-2">
-                          <div class="small-italic">Longevity | Metabolic Health</div>
-                          <div class="card-line-break"></div>
-                        </div>
-                        <div class="product-image-block-2">
-                          <img src="images/672431e8f64d5301ddc30909_Fella_Rapamycin%20%283%29%20%281%29.avif" alt="" class="float-image" />
-                        </div>
-                        <div class="descr-prod">
-                          <div class="bullets-prod-card">
-                            <div class="bullets-block">
-                              <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Enhanced cellular health</div>
-                            </div>
-                            <div class="bullets-block">
-                              <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Improved immune function</div>
-                            </div>
-                            <div class="bullets-block">
-                              <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Potential lifespan extension</div>
-                            </div>
-                            <div class="bullets-block">
-                              <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Cardiovascular health support</div>
-                            </div>
-                            <div class="bullets-block">
-                              <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Potential neuroprotective effects</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="prod-btn-set-2">
-                          <a data-six-monthly-price-total="534" data-type-add="tirzepatide" data-monthly-price="99" data-six-monthly-price="89" href="/rapamycin" class="upgrade-btn green-upgrade-btn w-inline-block">
-                            <div class="inline-wrapper">
-                              <div class="abcd-semimono-14 ems-abcd is-inline">from </div>
-                              <div class="abcd-semimono-14 ems-abcd is-inline inline-child"><div>$99</div></div>
-                              <div class="abcd-semimono-14 ems-abcd is-inline">/mo</div>
-                            </div>
-                          </a>
-                          <a
-                            data-six-monthly-price-total="534"
-                            data-type-remove="tirzepatide"
-                            data-monthly-price="99"
-                            data-six-monthly-price="89"
-                            href="#"
-                            class="add-cart-btn full-width-btn black-bg-btn remove-addons w-inline-block">
-                            <div class="abcd-semimono-14">REMOVE tirzepatide</div>
-                          </a>
-                          <div data-six-monthly-price-total="534" data-type-add="tirzepatide" data-monthly-price="99" data-six-monthly-price="89" class="learn-btn2">
-                            <div class="abcd-semimono-11-em green-mono normal-abcd">Medication cost included</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="splide__slide conain-slides">
-                      <div class="prod-cards keep-with-mobile">
-                        <h3 class="title-medium">NAD+</h3>
-                        <div class="card-breaker-2">
-                          <div class="small-italic">Longevity | Cellular Health</div>
-                          <div class="card-line-break"></div>
-                        </div>
-                        <div class="product-image-block-2">
-                          <img src="images/6724494cbe3e0525fa11d32f_image%20%2811%29.avif" alt="" class="float-image" />
-                        </div>
-                        <div class="descr-prod">
-                          <div class="bullets-prod-card">
-                            <div class="bullets-block">
-                              <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Improved cognitive function</div>
-                            </div>
-                            <div class="bullets-block">
-                              <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Potential anti-aging effects</div>
-                            </div>
-                            <div class="bullets-block">
-                              <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Boost to physical performance</div>
-                            </div>
-                            <div class="bullets-block">
-                              <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Complementary to longevity treatments</div>
-                            </div>
-                            <div class="bullets-block">
-                              <div class="bullet-checks-prod prod2 check-bullets-card"><img src="images/62cd0d05a1d1ac3014d9ffc3_Check%20Mark.svg" loading="lazy" alt="" class="img contain" /></div>
-                              <div class="inter-15">Support for DNA repair</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="prod-btn-set-2">
-                          <a data-six-monthly-price-total="534" data-type-add="tirzepatide" data-monthly-price="99" data-six-monthly-price="89" href="/nad" class="upgrade-btn green-upgrade-btn w-inline-block">
-                            <div class="inline-wrapper">
-                              <div class="abcd-semimono-14 ems-abcd is-inline">from </div>
-                              <div class="abcd-semimono-14 ems-abcd is-inline inline-child"><div>$99</div></div>
-                              <div class="abcd-semimono-14 ems-abcd is-inline">/mo</div>
-                            </div>
-                          </a>
-                          <a
-                            data-six-monthly-price-total="534"
-                            data-type-remove="tirzepatide"
-                            data-monthly-price="99"
-                            data-six-monthly-price="89"
-                            href="#"
-                            class="add-cart-btn full-width-btn black-bg-btn remove-addons w-inline-block">
-                            <div class="abcd-semimono-14">REMOVE tirzepatide</div>
-                          </a>
-                          <div data-six-monthly-price-total="534" data-type-add="tirzepatide" data-monthly-price="99" data-six-monthly-price="89" class="learn-btn2">
-                            <div class="abcd-semimono-11-em green-mono normal-abcd">Medication cost included</div>
+                          <div class="learn-btn2">
+                            <div class="abcd-semimono-11-em green-mono normal-abcd">Instant download</div>
                           </div>
                         </div>
                       </div>
@@ -1013,13 +1412,15 @@
       <div class="container prefooter cta_contain w-container">
         <div class="prefooter-wrapper">
           <div class="prefooter-bg">
-            <img src="images/avonn-banner.jpg" class="img pen-img" />
+            <img src="images/avonn-banner.jpg" class="img pen-img" style="object-fit: cover" alt="Fitness training" />
             <div class="overlay cta-overlay"></div>
           </div>
           <div class="prefooter-content">
-            <h2 class="header-italic graphik with-shadow">WEIGHT LOSS WITH Avonn</h2>
-            <div class="prefooter-par-block home-prefooter-par"><p class="paragraph-22">Take our quick quiz to see if you're eligible for doctor-prescribed weight loss treatments.</p></div>
-            <a href="/promo-quiz-nla" class="green-button-2 w-inline-block"><div class="button-text">Check Your Eligibility</div></a>
+            <h2 class="header-italic graphik with-shadow">READY TO START YOUR FITNESS TRANSFORMATION ONLINE?</h2>
+            <div class="prefooter-par-block home-prefooter-par">
+              <p class="paragraph-22">Get instant access to structured workouts, nutrition plans, and community support. Download your program today and start training.</p>
+            </div>
+            <a href="/shop" class="green-button-2 w-inline-block"><div class="button-text">Get Started</div></a>
           </div>
         </div>
       </div>
@@ -1037,7 +1438,8 @@
             </div>
             <div class="label-small">4.9 average rating</div>
           </div>
-          <h2 class="header-italic center-align-mobile">Real Avonn Stories</h2>
+          <h2 class="header-italic center-align-mobile">Success Stories</h2>
+          <div class="paragraph-small center-align-mobile" style="margin-top: 1em">What our members say</div>
         </div>
         <div class="slider-wrap splide slider1">
           <div class="slider-container splide__track w-dyn-list">
@@ -1047,33 +1449,37 @@
                   <div class="fella-stories">
                     <div class="fella-stats">
                       <div class="stats-block">
-                        <div class="caps-text">Lost: </div>
-                        <div class="caps-text">65</div>
-                        <div class="caps-text"> lbs</div>
+                        <div class="caps-text">Completed: </div>
+                        <div class="caps-text">4</div>
+                        <div class="caps-text"> weeks</div>
                       </div>
                       <div class="stats-block hide">
-                        <div class="caps-text">Age: </div>
-                        <div class="caps-text w-dyn-bind-empty"></div>
+                        <div class="caps-text">Program: </div>
+                        <div class="caps-text">20 Min</div>
                       </div>
                     </div>
                     <div class="fella-review">
                       <div class="apostrophe-block"><img src="images/62b509f79ef02b304ceb0df2_Quote%20Marks.svg" loading="lazy" alt="" class="img" /></div>
-                      <div class="review-text">320 pounds after 6 months with 255 pounds....still have 35+ to go!</div>
+                      <div class="review-text">I never thought I could stay consistent, but the 20-minute plan made it simple. The workouts are easy to follow, and the meal guide keeps me on track.</div>
                       <div class="author-block">
                         <div class="author-text">— </div>
-                        <div class="author-text">Luke</div>
+                        <div class="author-text">Edward Davidson</div>
                       </div>
                     </div>
                   </div>
                   <div class="slider-image">
                     <div class="before-after-div">
                       <div class="ba-split full-cover after-fill">
-                        <div class="ba-image-block"><img loading="lazy" src="images/650e4c93a3681ef904259f44_luke-after.avif" alt="" class="img show-top" /></div>
-                        <div class="after-block"><div class="mini-caps bigger-caps">after</div></div>
+                        <div class="ba-image-block">
+                          <img loading="lazy" src="images/650e4c93a3681ef904259f44_luke-after.avif" alt="Fitness transformation" class="img show-top" />
+                        </div>
+                        <div class="after-block"><div class="mini-caps bigger-caps">Result</div></div>
                       </div>
                       <div style="opacity: 0" class="ba-split full-cover before-fill">
-                        <div class="ba-image-block"><img loading="lazy" src="images/650e4c96ad757160aa235fe8_luke-before.avif" alt="" class="img show-top" /></div>
-                        <div class="after-block"><div class="mini-caps bigger-caps">Before</div></div>
+                        <div class="ba-image-block">
+                          <img loading="lazy" src="images/650e4c96ad757160aa235fe8_luke-before.avif" alt="Fitness journey" class="img show-top" />
+                        </div>
+                        <div class="after-block"><div class="mini-caps bigger-caps">Start</div></div>
                       </div>
                     </div>
                   </div>
@@ -1084,21 +1490,21 @@
                   <div class="fella-stories">
                     <div class="fella-stats">
                       <div class="stats-block">
-                        <div class="caps-text">Lost: </div>
-                        <div class="caps-text">34</div>
-                        <div class="caps-text"> lbs</div>
+                        <div class="caps-text">Completed:</div>
+                        <div class="caps-text">6</div>
+                        <div class="caps-text">weeks</div>
                       </div>
                       <div class="stats-block hide">
-                        <div class="caps-text">Age: </div>
-                        <div class="caps-text w-dyn-bind-empty"></div>
+                        <div class="caps-text">Program:</div>
+                        <div class="caps-text">40 Min</div>
                       </div>
                     </div>
                     <div class="fella-review">
                       <div class="apostrophe-block"><img src="images/62b509f79ef02b304ceb0df2_Quote%20Marks.svg" loading="lazy" alt="" class="img" /></div>
-                      <div class="review-text">Four months and 40 lbs later this is where we stand. Still on my journey.</div>
+                      <div class="review-text">The 40-minute program challenged me more than any gym routine. Having digital coaching and a support group made all the difference.</div>
                       <div class="author-block">
-                        <div class="author-text">— </div>
-                        <div class="author-text">Robert</div>
+                        <div class="author-text">—</div>
+                        <div class="author-text">Abigayle Jordan</div>
                       </div>
                     </div>
                   </div>
@@ -1106,15 +1512,15 @@
                     <div class="before-after-div">
                       <div class="ba-split full-cover after-fill">
                         <div class="ba-image-block">
-                          <img src="images/650e4cb794ef9ab775e73543_Robert%20After.avif" alt="" class="img show-top" />
+                          <img src="images/650e4cb794ef9ab775e73543_Robert%20After.avif" alt="Strength training result" class="img show-top" />
                         </div>
-                        <div class="after-block"><div class="mini-caps bigger-caps">after</div></div>
+                        <div class="after-block"><div class="mini-caps bigger-caps">Result</div></div>
                       </div>
                       <div style="opacity: 0" class="ba-split full-cover before-fill">
                         <div class="ba-image-block">
-                          <img src="images/650e4cba6cf62f0b69cec7c2_Robert-before.avif" alt="" class="img show-top" />
+                          <img src="images/650e4cba6cf62f0b69cec7c2_Robert-before.avif" alt="Strength training journey" class="img show-top" />
                         </div>
-                        <div class="after-block"><div class="mini-caps bigger-caps">Before</div></div>
+                        <div class="after-block"><div class="mini-caps bigger-caps">Start</div></div>
                       </div>
                     </div>
                   </div>
@@ -1125,21 +1531,21 @@
                   <div class="fella-stories">
                     <div class="fella-stats">
                       <div class="stats-block">
-                        <div class="caps-text">Lost: </div>
-                        <div class="caps-text">20</div>
-                        <div class="caps-text"> lbs</div>
+                        <div class="caps-text">Completed:</div>
+                        <div class="caps-text">4</div>
+                        <div class="caps-text">weeks</div>
                       </div>
                       <div class="stats-block hide">
-                        <div class="caps-text">Age: </div>
-                        <div class="caps-text w-dyn-bind-empty"></div>
+                        <div class="caps-text">Program:</div>
+                        <div class="caps-text">20 Min</div>
                       </div>
                     </div>
                     <div class="fella-review">
                       <div class="apostrophe-block"><img src="images/62b509f79ef02b304ceb0df2_Quote%20Marks.svg" loading="lazy" alt="" class="img" /></div>
-                      <div class="review-text">Avonn has been one of the best investments ever in my health and in my entire life.</div>
+                      <div class="review-text">Instant access was a game-changer. No waiting, just download and start. I feel fitter, stronger, and more confident after just 4 weeks.</div>
                       <div class="author-block">
                         <div class="author-text">— </div>
-                        <div class="author-text">Kelly</div>
+                        <div class="author-text">Leo Gibson</div>
                       </div>
                     </div>
                   </div>
@@ -1147,15 +1553,15 @@
                     <div class="before-after-div">
                       <div class="ba-split full-cover after-fill">
                         <div class="ba-image-block">
-                          <img src="images/650e4ef6457809d7ead9058b_kelly-after%20%281%29.avif" alt="" class="img show-top" />
+                          <img src="images/650e4ef6457809d7ead9058b_kelly-after%20%281%29.avif" alt="Fitness achievement" class="img show-top" />
                         </div>
-                        <div class="after-block"><div class="mini-caps bigger-caps">after</div></div>
+                        <div class="after-block"><div class="mini-caps bigger-caps">Result</div></div>
                       </div>
                       <div style="opacity: 0" class="ba-split full-cover before-fill">
                         <div class="ba-image-block">
-                          <img src="images/650e4ef9244001d586934807_kelly-before%20%281%29.avif" alt="" class="img show-top" />
+                          <img src="images/650e4ef9244001d586934807_kelly-before%20%281%29.avif" alt="Fitness journey" class="img show-top" />
                         </div>
-                        <div class="after-block"><div class="mini-caps bigger-caps">Before</div></div>
+                        <div class="after-block"><div class="mini-caps bigger-caps">Start</div></div>
                       </div>
                     </div>
                   </div>
@@ -1166,20 +1572,20 @@
                   <div class="fella-stories">
                     <div class="fella-stats">
                       <div class="stats-block">
-                        <div class="caps-text">Lost: </div>
-                        <div class="caps-text">54</div>
-                        <div class="caps-text"> lbs</div>
+                        <div class="caps-text">Gained:</div>
+                        <div class="caps-text">12</div>
+                        <div class="caps-text">lbs muscle</div>
                       </div>
                       <div class="stats-block hide">
-                        <div class="caps-text">Age: </div>
-                        <div class="caps-text">37</div>
+                        <div class="caps-text">Program:</div>
+                        <div class="caps-text">40 Min</div>
                       </div>
                     </div>
                     <div class="fella-review">
                       <div class="apostrophe-block"><img src="images/62b509f79ef02b304ceb0df2_Quote%20Marks.svg" loading="lazy" alt="" class="img" /></div>
-                      <div class="review-text">I’m a different person than I was, can’t imagine going back to that person again</div>
+                      <div class="review-text">I'm stronger, more confident, and have more energy than ever. The structured program and community support kept me motivated.</div>
                       <div class="author-block">
-                        <div class="author-text">— </div>
+                        <div class="author-text">—</div>
                         <div class="author-text">Justin J</div>
                       </div>
                     </div>
@@ -1187,14 +1593,16 @@
                   <div class="slider-image">
                     <div class="before-after-div">
                       <div class="ba-split full-cover after-fill">
-                        <div class="ba-image-block"><img loading="lazy" src="images/62c289554303716d4625bcde_Juntin%20After.avif" alt="" class="img show-top" /></div>
-                        <div class="after-block"><div class="mini-caps bigger-caps">after</div></div>
+                        <div class="ba-image-block">
+                          <img loading="lazy" src="images/62c289554303716d4625bcde_Juntin%20After.avif" alt="Muscle gain transformation" class="img show-top" />
+                        </div>
+                        <div class="after-block"><div class="mini-caps bigger-caps">Result</div></div>
                       </div>
                       <div style="opacity: 0" class="ba-split full-cover before-fill">
                         <div class="ba-image-block">
-                          <img src="images/650e1e102badace23da67513_Justin%20Before%20Slider.avif" alt="" class="img show-top" />
+                          <img src="images/650e1e102badace23da67513_Justin%20Before%20Slider.avif" alt="Strength journey" class="img show-top" />
                         </div>
-                        <div class="after-block"><div class="mini-caps bigger-caps">Before</div></div>
+                        <div class="after-block"><div class="mini-caps bigger-caps">Start</div></div>
                       </div>
                     </div>
                   </div>
@@ -1205,20 +1613,20 @@
                   <div class="fella-stories">
                     <div class="fella-stats">
                       <div class="stats-block">
-                        <div class="caps-text">Lost: </div>
-                        <div class="caps-text">60</div>
-                        <div class="caps-text"> lbs</div>
+                        <div class="caps-text">Improved:</div>
+                        <div class="caps-text">45%</div>
+                        <div class="caps-text">endurance</div>
                       </div>
                       <div class="stats-block hide">
-                        <div class="caps-text">Age: </div>
-                        <div class="caps-text">55</div>
+                        <div class="caps-text">Program:</div>
+                        <div class="caps-text">40 Min</div>
                       </div>
                     </div>
                     <div class="fella-review">
                       <div class="apostrophe-block"><img src="images/62b509f79ef02b304ceb0df2_Quote%20Marks.svg" loading="lazy" alt="" class="img" /></div>
-                      <div class="review-text">Avonn is something I can follow for the rest of my life</div>
+                      <div class="review-text">This program is something I can follow for the rest of my life. The workouts are challenging but achievable, and the results speak for themselves.</div>
                       <div class="author-block">
-                        <div class="author-text">— </div>
+                        <div class="author-text">—</div>
                         <div class="author-text">Alfredo</div>
                       </div>
                     </div>
@@ -1227,13 +1635,15 @@
                     <div class="before-after-div">
                       <div class="ba-split full-cover after-fill">
                         <div class="ba-image-block">
-                          <img src="images/650e513d15fe162f8b658a69_Alfredo%20After%201a.avif" alt="" class="img show-top" />
+                          <img src="images/650e513d15fe162f8b658a69_Alfredo%20After%201a.avif" alt="Endurance improvement" class="img show-top" />
                         </div>
-                        <div class="after-block"><div class="mini-caps bigger-caps">after</div></div>
+                        <div class="after-block"><div class="mini-caps bigger-caps">Result</div></div>
                       </div>
                       <div style="opacity: 0" class="ba-split full-cover before-fill">
-                        <div class="ba-image-block"><img loading="lazy" src="images/650e1f1eeafc9e967cd09f86_Alfredo%20Before.avif" alt="" class="img show-top" /></div>
-                        <div class="after-block"><div class="mini-caps bigger-caps">Before</div></div>
+                        <div class="ba-image-block">
+                          <img loading="lazy" src="images/650e1f1eeafc9e967cd09f86_Alfredo%20Before.avif" alt="Endurance journey" class="img show-top" />
+                        </div>
+                        <div class="after-block"><div class="mini-caps bigger-caps">Start</div></div>
                       </div>
                     </div>
                   </div>
@@ -1244,20 +1654,20 @@
                   <div class="fella-stories">
                     <div class="fella-stats">
                       <div class="stats-block">
-                        <div class="caps-text">Lost: </div>
-                        <div class="caps-text">36</div>
-                        <div class="caps-text"> lbs</div>
+                        <div class="caps-text">Completed:</div>
+                        <div class="caps-text">8</div>
+                        <div class="caps-text">weeks</div>
                       </div>
                       <div class="stats-block hide">
-                        <div class="caps-text">Age: </div>
-                        <div class="caps-text">50</div>
+                        <div class="caps-text">Program:</div>
+                        <div class="caps-text">40 Min</div>
                       </div>
                     </div>
                     <div class="fella-review">
                       <div class="apostrophe-block"><img src="images/62b509f79ef02b304ceb0df2_Quote%20Marks.svg" loading="lazy" alt="" class="img" /></div>
-                      <div class="review-text">The weight loss started off very easy and has continued to come off.</div>
+                      <div class="review-text">The strength gains started immediately and have continued to improve. The structured approach made all the difference.</div>
                       <div class="author-block">
-                        <div class="author-text">— </div>
+                        <div class="author-text">—</div>
                         <div class="author-text">Mark</div>
                       </div>
                     </div>
@@ -1265,12 +1675,16 @@
                   <div class="slider-image">
                     <div class="before-after-div">
                       <div class="ba-split full-cover after-fill">
-                        <div class="ba-image-block"><img loading="lazy" src="images/650e1f9d107e3d4aec37bdac_Mark%20After%20Slider.avif" alt="" class="img show-top" /></div>
-                        <div class="after-block"><div class="mini-caps bigger-caps">after</div></div>
+                        <div class="ba-image-block">
+                          <img loading="lazy" src="images/650e1f9d107e3d4aec37bdac_Mark%20After%20Slider.avif" alt="Strength training result" class="img show-top" />
+                        </div>
+                        <div class="after-block"><div class="mini-caps bigger-caps">Result</div></div>
                       </div>
                       <div style="opacity: 0" class="ba-split full-cover before-fill">
-                        <div class="ba-image-block"><img loading="lazy" src="images/650e1f6f107e3d4aec379638_Mark%20Before%20Slider.avif" alt="" class="img show-top" /></div>
-                        <div class="after-block"><div class="mini-caps bigger-caps">Before</div></div>
+                        <div class="ba-image-block">
+                          <img loading="lazy" src="images/650e1f6f107e3d4aec379638_Mark%20Before%20Slider.avif" alt="Strength journey" class="img show-top" />
+                        </div>
+                        <div class="after-block"><div class="mini-caps bigger-caps">Start</div></div>
                       </div>
                     </div>
                   </div>
@@ -1281,18 +1695,18 @@
                   <div class="fella-stories">
                     <div class="fella-stats">
                       <div class="stats-block">
-                        <div class="caps-text">Lost: </div>
-                        <div class="caps-text">74</div>
-                        <div class="caps-text"> lbs</div>
+                        <div class="caps-text">Transformed: </div>
+                        <div class="caps-text">Body</div>
+                        <div class="caps-text">composition</div>
                       </div>
                       <div class="stats-block hide">
-                        <div class="caps-text">Age: </div>
-                        <div class="caps-text">50</div>
+                        <div class="caps-text">Program: </div>
+                        <div class="caps-text">40 Min</div>
                       </div>
                     </div>
                     <div class="fella-review">
                       <div class="apostrophe-block"><img src="images/62b509f79ef02b304ceb0df2_Quote%20Marks.svg" loading="lazy" alt="" class="img" /></div>
-                      <div class="review-text">I was wearing 3XL when I started. This is my first nice XL shirt</div>
+                      <div class="review-text">I was struggling with consistency when I started. Now I'm stronger, fitter, and more confident than I've been in years.</div>
                       <div class="author-block">
                         <div class="author-text">— </div>
                         <div class="author-text">Byron</div>
@@ -1302,12 +1716,16 @@
                   <div class="slider-image">
                     <div class="before-after-div">
                       <div class="ba-split full-cover after-fill">
-                        <div class="ba-image-block"><img loading="lazy" src="images/631eb99fc664e8174a719c6e_Byron.avif" alt="" class="img show-top" /></div>
-                        <div class="after-block"><div class="mini-caps bigger-caps">after</div></div>
+                        <div class="ba-image-block">
+                          <img loading="lazy" src="images/631eb99fc664e8174a719c6e_Byron.avif" alt="Body transformation" class="img show-top" />
+                        </div>
+                        <div class="after-block"><div class="mini-caps bigger-caps">Result</div></div>
                       </div>
                       <div style="opacity: 0" class="ba-split full-cover before-fill">
-                        <div class="ba-image-block"><img loading="lazy" src="images/650e1fb71b9417e571b7b6ad_Byron%20Before.avif" alt="" class="img show-top" /></div>
-                        <div class="after-block"><div class="mini-caps bigger-caps">Before</div></div>
+                        <div class="ba-image-block">
+                          <img loading="lazy" src="images/650e1fb71b9417e571b7b6ad_Byron%20Before.avif" alt="Fitness journey start" class="img show-top" />
+                        </div>
+                        <div class="after-block"><div class="mini-caps bigger-caps">Start</div></div>
                       </div>
                     </div>
                   </div>
@@ -1318,12 +1736,12 @@
                   <div class="fella-stories">
                     <div class="fella-stats">
                       <div class="stats-block">
-                        <div class="caps-text">Lost: </div>
-                        <div class="caps-text">37</div>
-                        <div class="caps-text"> lbs</div>
+                        <div class="caps-text">Improved:</div>
+                        <div class="caps-text">Energy</div>
+                        <div class="caps-text">levels</div>
                       </div>
                       <div class="stats-block hide">
-                        <div class="caps-text">Age: </div>
+                        <div class="caps-text">Age:</div>
                         <div class="caps-text">42</div>
                       </div>
                     </div>
@@ -1331,7 +1749,7 @@
                       <div class="apostrophe-block"><img src="images/62b509f79ef02b304ceb0df2_Quote%20Marks.svg" loading="lazy" alt="" class="img" /></div>
                       <div class="review-text">With help from Avonn, I've improved my health, and now have the energy to live happily.</div>
                       <div class="author-block">
-                        <div class="author-text">— </div>
+                        <div class="author-text">—</div>
                         <div class="author-text">Jeremy</div>
                       </div>
                     </div>
@@ -1339,12 +1757,16 @@
                   <div class="slider-image">
                     <div class="before-after-div">
                       <div class="ba-split full-cover after-fill">
-                        <div class="ba-image-block"><img loading="lazy" src="images/6703520e16fae35445d5e134_jeremy-after.avif" alt="" class="img show-top" /></div>
-                        <div class="after-block"><div class="mini-caps bigger-caps">after</div></div>
+                        <div class="ba-image-block">
+                          <img loading="lazy" src="images/6703520e16fae35445d5e134_jeremy-after.avif" alt="Energy improvement result" class="img show-top" />
+                        </div>
+                        <div class="after-block"><div class="mini-caps bigger-caps">Result</div></div>
                       </div>
                       <div style="opacity: 0" class="ba-split full-cover before-fill">
-                        <div class="ba-image-block"><img loading="lazy" src="images/6703521225ea7ebaafaa9b4f_jemery-before.avif" alt="" class="img show-top" /></div>
-                        <div class="after-block"><div class="mini-caps bigger-caps">Before</div></div>
+                        <div class="ba-image-block">
+                          <img loading="lazy" src="images/6703521225ea7ebaafaa9b4f_jemery-before.avif" alt="Energy journey start" class="img show-top" />
+                        </div>
+                        <div class="after-block"><div class="mini-caps bigger-caps">Start</div></div>
                       </div>
                     </div>
                   </div>
@@ -1433,20 +1855,20 @@
                   </div>
                   <div class="name-handle-block">
                     <div class="name-rev">Robert</div>
-                    <div class="reviewer-handle">Lost 40 lbs</div>
+                    <div class="reviewer-handle">20 Min Program</div>
                   </div>
                 </div>
-                <p class="reviewer-text">Four months and 40 lbs later this is where we stand. Still on my journey.</p>
+                <p class="reviewer-text">Four months into the program and I'm stronger, fitter, and more confident. The workouts are challenging but achievable, and the meal plans keep me on track.</p>
               </div>
               <div class="review-boxes">
                 <div class="image-name-block">
                   <div class="reviewer-img-circle"><img src="images/646f6d8c4d8cc8dc4f5336d7_byron.avif" loading="lazy" alt="" class="img top-seen" /></div>
                   <div class="name-handle-block">
                     <div class="name-rev">Byron</div>
-                    <div class="reviewer-handle">Lost 74 lbs</div>
+                    <div class="reviewer-handle">40 Min Program</div>
                   </div>
                 </div>
-                <p class="reviewer-text">I was wearing 3XL when I started. This is my first nice XL shirt</p>
+                <p class="reviewer-text">I was struggling with consistency when I started. Now I'm stronger, fitter, and more confident than I've been in years. The program structure made all the difference.</p>
               </div>
               <div class="review-boxes">
                 <div class="image-name-block">
@@ -1455,51 +1877,11 @@
                   </div>
                   <div class="name-handle-block">
                     <div class="name-rev">Klint D</div>
-                    <div class="reviewer-handle">Lost 39 lbs</div>
-                  </div>
-                </div>
-                <p class="reviewer-text">I have done about everything there is to regarding weight loss. When the pandemic hit my support systems were scattered. I could not recommend the program more.</p>
-              </div>
-            </div>
-            <div class="columns-set">
-              <div class="review-boxes">
-                <div class="image-name-block">
-                  <div class="reviewer-img-circle">
-                    <img src="images/64c070d31079283f42619109_Alfredo%20After.avif" alt="" class="img top-seen" />
-                  </div>
-                  <div class="name-handle-block">
-                    <div class="name-rev">Alfredo</div>
-                    <div class="reviewer-handle">Lost 60 lbs</div>
+                    <div class="reviewer-handle">Recovery Program</div>
                   </div>
                 </div>
                 <p class="reviewer-text">
-                  I lead a very busy life and could use every excuse in the book to let this program fail but it isn't difficult to maintain. Avonn has been perfect for me as I have tried other diets that never seemed to
-                  be sustainable
-                </p>
-              </div>
-              <div class="review-boxes">
-                <div class="image-name-block">
-                  <div class="reviewer-img-circle">
-                    <img src="images/6417f7806c79a887dac2c5e3_Shai%20Qoute.webp" alt="" class="img top-seen" />
-                  </div>
-                  <div class="name-handle-block">
-                    <div class="name-rev">Shai</div>
-                    <div class="reviewer-handle">Lost 20 lbs</div>
-                  </div>
-                </div>
-                <p class="reviewer-text">Avonn empowered me to lose 20lbs in 2 months</p>
-              </div>
-              <div class="review-boxes">
-                <div class="image-name-block">
-                  <div class="reviewer-img-circle"><img src="images/6388554b1ff47351ceb62067_Mark%20After.webp" loading="lazy" alt="" class="img top-seen" /></div>
-                  <div class="name-handle-block">
-                    <div class="name-rev">Mark</div>
-                    <div class="reviewer-handle">Lost 41 lbs</div>
-                  </div>
-                </div>
-                <p class="reviewer-text">
-                  The weight loss started off very easy and has continued to come off. I started at 317 in November 17, 2021. Now in February 25, 2022 I weigh 276.
-                  <strong><br /></strong>
+                  I've tried many fitness programs, but when I needed structure and support, Avonn delivered. The recovery program helped me stay consistent and avoid burnout. I couldn't recommend it more.
                 </p>
               </div>
             </div>
@@ -1525,18 +1907,17 @@
             </div>
             <h2 class="graph-xcond-64">
               <span class="yellow-font">
-                GET RESULTS
+                DIGITAL PROGRAMS
                 <br />
                 ‍
               </span>
-              OR YOUR MONEY BACK
+              DISCOVER HOW AVONN FITNESS WORKS AND WHAT YOU GET
             </h2>
           </div>
           <div class="guar-block">
             <div class="paragraph-small">
-              We’re so confident in our Metabolic Reset, we guarantee you’ll lose at least 5% of your body weight - or your money back (
-              <a href="/guarantee" target="_blank" class="link">see terms</a>
-              ).
+              With Avonn Fitness plan you don't need a gym – your complete plan arrives as instant eBooks. Get structured training guides, high-protein meal plans, optional 1-to-1 coaching, and access to our private
+              support group. Everything you need to hit your fitness goals, available anywhere.
             </div>
           </div>
         </div>
@@ -1548,8 +1929,8 @@
             <div class="top-bar-info"><div class="caption dark-caption">Start today!</div></div>
             <div class="price-bar-content">
               <div class="paragraph-medium center-text">
-                The most powerful weight loss program -
-                <em>is yours</em>
+                Your complete fitness transformation -
+                <em>starts here</em>
               </div>
               <div class="space-block-med-e">
                 <div class="caption dark-caption">
@@ -1559,17 +1940,17 @@
               </div>
               <div class="listed-items-price">
                 <img src="images/652e042cdc5430370e876f24_DOCTOR%203%20%281%29.svg" loading="lazy" alt="" class="img-list" />
-                <div class="paragraph-small">Board-certified clinicians</div>
+                <div class="paragraph-small">Structured workout programs</div>
               </div>
               <div class="listed-items-price">
                 <img src="images/664fe87fbc3ee41916818cca_microscope.webp" loading="lazy" alt="" class="img-list" />
-                <div class="paragraph-small">Free labwork, locally or at-home (if needed)</div>
+                <div class="paragraph-small">High-protein nutrition plans</div>
               </div>
               <div class="listed-items-price hide">
                 <img src="images/652dffdbc2b0e3f907e3aed9_GET%20UP%20EARLY%201.svg" loading="lazy" alt="" class="img-list" />
-                <div class="paragraph-small">Medication included in the cost (no hidden charges)</div>
+                <div class="paragraph-small">1-to-1 coaching & community support (optional)</div>
               </div>
-              <a href="/promo-quiz-nla" class="green-button w-inline-block"><div class="button-text">Start HERE</div></a>
+              <a href="/shop" class="green-button w-inline-block"><div class="button-text">Get Started</div></a>
             </div>
           </div>
         </div>
@@ -1586,9 +1967,14 @@
                 <div class="plus-line"></div>
               </div>
               <div class="question-container">
-                <h3 class="title-medium">will it work?</h3>
+                <h3 class="title-medium">What equipment do I need?</h3>
                 <div class="answer-container">
-                  <div class="answer-here"><p class="paragraph-small">By pairing our medication with your dedication, Avonn members experience 2-4x better results than diet and exercise alone.</p></div>
+                  <div class="answer-here">
+                    <p class="paragraph-small">
+                      Our programs are designed to work with minimal equipment. Most workouts can be done with just bodyweight, and some optional items like dumbbells or resistance bands can enhance your training. No gym
+                      membership required!
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1598,37 +1984,37 @@
                 <div class="plus-line"></div>
               </div>
               <div class="question-container">
-                <div class="title-medium"><div>How long does it take?</div></div>
+                <div class="title-medium"><div>Can beginners follow these programs?</div></div>
                 <div class="answer-container">
                   <div class="answer-here">
                     <div class="paragraph-small">
                       <div>
-                        As a busy man, we know your time is limited.
+                        Absolutely! Our programs are designed for all fitness levels.
                         <br />
                         <br />
-                        While the journey is personal, our program is designed to deliver rapid results while establishing healthy habits for the long-term.
+                        Beginners can start with the 20-minute program and progress at their own pace. Each workout includes clear instructions and modifications for different fitness levels.
                         <br />
                         <br />
-                        Within the first month, you'll notice the medications curbing hunger and reducing cravings.
+                        Within the first week, you'll notice improved energy and better movement patterns.
                         <br />
                         <br />
-                        By months 2-3, you’ll have built better habits into your routine.
+                        By weeks 2-4, you'll have built consistency and strength.
                         <br />
                         <br />
-                        From months 4-6, maintaining your new lifestyle becomes second nature.
+                        From weeks 4-8, maintaining your routine becomes second nature.
                         <br />
                         <br />
-                        After 6 months, members like you have lost an average of 10% of their body weight and kept it off.
+                        After 8 weeks, members typically see significant improvements in strength, endurance, and body composition.
                         <br />
                         <br />
-                        And in just 12 months, you'll have achieved sustainable weight loss and made lasting improvements to energy and confidence - all while still excelling in your demanding career.
+                        And in just 12 weeks, you'll have achieved sustainable fitness results and made lasting improvements to your health and confidence.
                         <br />
                         <br />
-                        This is not a quick fix - it's a science-backed approach tailored for busy men to help you lose weight and live the healthy, active lifestyle you want for good.
+                        This is not a quick fix - it's a structured approach designed to help you build lasting fitness habits.
                         <br />
                         <br />
-                        Check out all of our plans and pricing
-                        <a href="/treatments" class="link">here.</a>
+                        Check out all of our programs and pricing
+                        <a href="/shop" class="link">here.</a>
                       </div>
                     </div>
                   </div>
@@ -1641,7 +2027,7 @@
                 <div class="plus-line"></div>
               </div>
               <div class="question-container">
-                <h3 class="title-medium">HOW DOES THE METABOLIC ASSESSMENT WORK?</h3>
+                <h3 class="title-medium">How long until I see results?</h3>
                 <div class="answer-container">
                   <div class="answer-here">
                     <p class="paragraph-small">
@@ -1697,34 +2083,79 @@
                 <div class="plus-line"></div>
               </div>
               <div class="question-container">
-                <div class="title-medium"><div>How does the program actually work?</div></div>
+                <div class="title-medium"><div>What's included in the meal plans?</div></div>
                 <div class="answer-container">
                   <div class="answer-here">
                     <div class="paragraph-small">
                       <div>
-                        As a busy man, we know you have limited time for complex weight loss programs.
+                        Our meal plans are designed to be simple, effective, and fit your busy lifestyle.
                         <br />
                         <br />
-                        Our approach is designed specifically to fit your lifestyle.
+                        Each program includes high-protein nutrition guidance with meal suggestions, shopping lists, and prep tips.
                         <br />
                         <br />
-                        First, we'll get to know your unique health history and needs.
+                        The plans focus on whole foods that support your training goals - whether that's building muscle, burning fat, or improving recovery.
                         <br />
                         <br />
-                        Our clinicians then create a tailored plan just for you, which may include GLP-1 medications to curb stress eating, and hunger.
+                        You'll get clear portion guidance and can adapt recipes to your preferences and dietary needs.
                         <br />
                         <br />
-                        Your personal support provides the ongoing support you need to build healthy habits long-term, with email check-ins to keep you on track.
+                        No complicated meal prep required - just simple, effective nutrition that works with your schedule.
                         <br />
                         <br />
-                        We focus on sleep, nutrition, and exercise strategies to help busy men achieve results.
+                        Check out all of our programs and pricing
+                        <a href="/shop" class="link">here.</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faqs-container">
+              <div class="plus-icon">
+                <div class="minus-line"></div>
+                <div class="plus-line"></div>
+              </div>
+              <div class="question-container">
+                <div class="title-medium"><div>Do I need gym access?</div></div>
+                <div class="answer-container">
+                  <div class="answer-here">
+                    <div class="paragraph-small">
+                      <div>
+                        No gym required! Our programs are designed to be done anywhere - at home, in a hotel room, or outdoors.
                         <br />
                         <br />
-                        This science-backed combination of medication, and lifestyle changes provides busy men like yourself with a convenient path to sustainable weight loss.
+                        Most workouts use bodyweight exercises, and optional equipment like dumbbells or resistance bands can enhance your training but aren't necessary.
                         <br />
                         <br />
-                        Check out all of our plans and pricing
-                        <a href="/treatments" class="link">here.</a>
+                        This makes it perfect for busy schedules - you can train anytime, anywhere, without the hassle of commuting to a gym.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faqs-container">
+              <div class="plus-icon">
+                <div class="minus-line"></div>
+                <div class="plus-line"></div>
+              </div>
+              <div class="question-container">
+                <div class="title-medium"><div>What if I miss a workout?</div></div>
+                <div class="answer-container">
+                  <div class="answer-here">
+                    <div class="paragraph-small">
+                      <div>
+                        Life happens! Our programs are designed with flexibility in mind.
+                        <br />
+                        <br />
+                        If you miss a workout, simply pick up where you left off. The programs are structured but adaptable to your schedule.
+                        <br />
+                        <br />
+                        Consistency is more important than perfection - even 3-4 workouts per week will deliver great results.
+                        <br />
+                        <br />
+                        The community support and optional coaching can help you stay on track and get back into your routine when life gets busy.
                       </div>
                     </div>
                   </div>
@@ -1744,13 +2175,13 @@
         <div class="container prefooter w-container">
           <div class="prefooter-wrapper">
             <div class="prefooter-bg">
-              <img src="images/6821a54c663d8c0f25577914_fella_US_CTA.webp" alt="" class="img" />
-              <div class="overlay"></div>
+              <img src="images/6821a54c663d8c0f25577914_fella_US_CTA.webp" alt="Fitness workout" class="img" style="object-fit: cover" />
+              <div class="overlay cta-overlay"></div>
             </div>
             <div class="prefooter-content">
-              <h2 class="header-italic graphik with-shadow">Try smarter, not harder</h2>
-              <div class="prefooter-par-block"><p class="paragraph-22">We’re here to give you what you need to succeed.</p></div>
-              <a href="/join-now" class="green-button-2 w-inline-block"><div class="button-text">join now</div></a>
+              <h2 class="header-italic graphik with-shadow">Train Smarter, Not Harder</h2>
+              <div class="prefooter-par-block"><p class="paragraph-22">Start your fitness journey today with our proven programs.</p></div>
+              <a href="/shop" class="green-button-2 w-inline-block"><div class="button-text">Get Started</div></a>
             </div>
           </div>
         </div>
@@ -1790,14 +2221,14 @@
                   <h2 class="header-italic graphik with-shadow is-size--medium">
                     Free personalized
                     <br />
-                    <span>health coaching</span>
+                    <span>fitness coaching</span>
                   </h2>
                 </div>
                 <p class="inter-15 less-opac-70">
-                  You’ll have regular 1:1 video chat sessions with your personal health coach every 2 weeks. They’ll help build a custom plan, and build your confidence to stick with it for the long-haul with texts to
-                  support and guide you.
+                  You'll have regular 1:1 video chat sessions with your personal fitness coach every 2 weeks. They'll help build a custom plan, track your progress, and build your confidence to stick with it for the
+                  long-haul with messages to support and guide you.
                 </p>
-                <a href="/join-now" class="outline-button-white w-inline-block"><div class="button-text">join now</div></a>
+                <a href="/shop" class="outline-button-white w-inline-block"><div class="button-text">get started</div></a>
               </div>
               <img src="images/679a331bd9adc2527ff52a9b_free-coaching-image.avif" alt="" class="free-coaching-image" />
             </div>
@@ -1809,18 +2240,18 @@
       <div class="container banner-cta-sect home-less-top-padding less-mobile-pad-top-bot w-container">
         <div class="banner-cta-bottom">
           <div class="banner-wrap-2">
-            <h2 class="header-italic">How much weight could you lose?</h2>
-            <a href="/fella-promo-quiz-nla" class="green-button-2 margin-top-btn w-inline-block"><div class="button-text">take the quiz</div></a>
+            <h2 class="header-italic">Ready to transform your fitness?</h2>
+            <a href="/shop" class="green-button-2 margin-top-btn w-inline-block"><div class="button-text">Get Started</div></a>
           </div>
           <div class="range-contain-2">
-            <div class="paragraph-medium">Your current weight:</div>
-            <div class="realz">305</div>
+            <div class="paragraph-medium">Your weekly training time:</div>
+            <div class="realz">20</div>
             <div class="fs-rangeslider_form w-form">
               <form id="email-form" name="email-form" data-name="Email Form" method="get" data-wf-page-id="65b642b021078c5d27c9e69f" data-wf-element-id="b942d3d9-c781-9c86-4dc1-03e363813a8a">
-                <div fs-rangeslider-formatdisplay="true" fs-rangeslider-element="wrapper" fs-rangeslider-min="160" fs-rangeslider-max="450" fs-rangeslider-step="1" class="fs-rangeslider_wrapper">
+                <div fs-rangeslider-formatdisplay="true" fs-rangeslider-element="wrapper" fs-rangeslider-min="10" fs-rangeslider-max="120" fs-rangeslider-step="5" class="fs-rangeslider_wrapper">
                   <div fs-rangeslider-element="track" class="fs-rangeslider_track">
-                    <div fs-rangeslider-start="305" fs-rangeslider-element="handle" class="fs-rangeslider_handle">
-                      <div class="fs-rangeslider_handle-value"><span fs-rangeslider-element="display-value" class="num-var">0</span></div>
+                    <div fs-rangeslider-start="20" fs-rangeslider-element="handle" class="fs-rangeslider_handle">
+                      <div class="fs-rangeslider_handle-value"><span fs-rangeslider-element="display-value" class="num-var">20</span></div>
                     </div>
                     <div fs-rangeslider-element="fill" class="fs-rangeslider_fill"></div>
                   </div>
@@ -1833,13 +2264,12 @@
             </div>
             <div class="div-block-300">
               <div class="paragraph-medium">
-                You could
+                Recommended
                 <br />
-                easily lose:
+                program:
               </div>
-              <div class="title-medium pound-text">
-                <span class="num-compute">67</span>
-                lbs
+              <div class="title-medium pound-text" style="color: #10b981">
+                <span class="num-compute">Fit in 20</span>
               </div>
             </div>
           </div>
@@ -1942,42 +2372,41 @@
         <img src="images/avonn-logo.png" loading="lazy" alt="" class="fella-footer-icon" />
         <div class="footer-link-columns-wrapper">
           <div class="footer-column">
-            <div class="footer-column-header">Popular</div>
-            <a href="/treatments" class="footer-link">Treatments</a>
-            <a href="/reviews" class="footer-link">Reviews</a>
-            <a href="/faq" class="footer-link">FAQ</a>
-            <a href="" target="_blank" class="footer-link">Join the Team</a>
+            <div class="footer-column-header">Programs</div>
+            <a href="/shop" class="footer-link">Fit in 20 Minutes</a>
+            <a href="/shop" class="footer-link">Fit in 40 Minutes</a>
+            <a href="/shop" class="footer-link">Recovery Program</a>
+            <a href="/shop" class="footer-link">View All Programs</a>
           </div>
           <div class="footer-column">
-            <div class="footer-column-header">Treatments</div>
-            <a href="/testosterone-rejuvenation" class="footer-link">Enclomiphene</a>
-            <a href="/metformin" class="footer-link">Metformin</a>
-            <a href="/rapamycin" class="footer-link">Rapamycin</a>
-            <a href="/nad" class="footer-link">NAD+</a>
+            <div class="footer-column-header">Resources</div>
+            <a href="/faq" class="footer-link">FAQ</a>
+            <a href="/reviews" class="footer-link">Success Stories</a>
+            <a href="/guide" class="footer-link">Workout Guides</a>
+            <a href="/coaching" class="footer-link">1-to-1 Coaching</a>
           </div>
           <div class="footer-column">
             <div class="footer-column-header">Success Stories</div>
-            <a href="/reviews/mark-review" class="footer-link">Mark</a>
-            <a href="/reviews/justin-review" class="footer-link">Justin</a>
-            <a href="/reviews/fred-review" class="footer-link">Fred</a>
-            <a href="/reviews/robert-review" class="footer-link">Robert</a>
-            <a href="/reviews/bruce-review" class="footer-link">Bruce</a>
-            <a href="/reviews/clay-review" class="footer-link">Clay</a>
-            <a href="/reviews/matthew-review" class="footer-link">Matthew</a>
-            <a href="/reviews/dylan-review" class="footer-link">Dylan</a>
-            <a href="/reviews/brent-review" class="footer-link">Brent</a>
-            <a href="/reviews/mohammed-review" class="footer-link">Mohammed</a>
+            <a href="/reviews" class="footer-link">Edward's Story</a>
+            <a href="/reviews" class="footer-link">Abigayle's Story</a>
+            <a href="/reviews" class="footer-link">Leo's Story</a>
+            <a href="/reviews" class="footer-link">Justin's Story</a>
+            <a href="/reviews" class="footer-link">Alfredo's Story</a>
+            <a href="/reviews" class="footer-link">Mark's Story</a>
+            <a href="/reviews" class="footer-link">Byron's Story</a>
+            <a href="/reviews" class="footer-link">Jeremy's Story</a>
+            <a href="/reviews" class="footer-link">View All Stories</a>
           </div>
           <div class="footer-column">
-            <div class="footer-column-header">LEarn</div>
-            <a href="/guide" class="footer-link">Guides & Blogs</a>
-            <a href="/about/states" class="footer-link">Alternatives</a>
-            <a href="/about/states" class="footer-link">States</a>
+            <div class="footer-column-header">Support</div>
+            <a href="/guide" class="footer-link">Workout Guides</a>
+            <a href="/faq" class="footer-link">Help Center</a>
+            <a href="/contact" class="footer-link">Contact Us</a>
             <div class="footer-spacer"></div>
             <div class="footer-column-header">Got Questions?</div>
-            <a href="tel:(415)123-5678" class="footer-link">Call (415) 649-5531</a>
+            <a href="mailto:support@avonn.com" class="footer-link">support@avonn.com</a>
             <a href="/privacy" class="footer-link">Privacy Policy</a>
-            <a href="/privacy-practices" class="footer-link">Privacy Practices</a>
+            <a href="/terms" class="footer-link">Terms of Service</a>
             <a href="/guarantee" class="footer-link">Guarantee</a>
           </div>
           <div id="w-node-d2f0a194-2fb9-ae60-5968-1bd19e03a9c1-cf27ce98" class="footer-column">
@@ -2016,10 +2445,10 @@
         </div>
         <div class="footer-seals-wrapper">
           <div class="footer-column is-first">
-            <div class="footer-column-header">Treatments built for bigger guys</div>
+            <div class="footer-column-header">Start Your Fitness Journey Today</div>
             <div class="footer-quiz-wrapper">
-              <a href="/quiz-promo" class="green-button is-footer w-button">TAKE THE QUIZ</a>
-              <a href="" target="_blank" class="outlined-button w-button">LOGIN</a>
+              <a href="/shop" class="green-button is-footer w-button">GET STARTED</a>
+              <a href="/login" target="_blank" class="outlined-button w-button">LOGIN</a>
             </div>
           </div>
           <div class="footer-quiz-wrapper is-seals">
