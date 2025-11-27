@@ -9,7 +9,6 @@
     <meta content="/images/661c99c51189817f9b594398_Replace%20Image.webp" property="og:image" />
     <meta content="Our Weight Loss and Testosterone Treatments for Men" property="twitter:title" />
     <meta content="See our full range of GLP-1 weight loss and testosterone rejuvenation treatments for men with busy lifestyles." property="twitter:description" />
-    <meta content="https://cdn.prod.website-files.com/62aebd5e1a672b9ce6b506c4/661c99c51189817f9b594398_Replace%20Image.webp" property="twitter:image" />
     <meta property="og:type" content="website" />
     <meta content="summary_large_image" name="twitter:card" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -17,6 +16,510 @@
     <style>
       html.w-mod-js:not(.w-mod-ix3) :is(.rm-as-indicator-dot-ping) {
         visibility: hidden !important;
+      }
+    </style>
+    <style>
+      /* Avonn Fitness - Vibrant Design System */
+      :root {
+        --primary-green: #10b981;
+        --primary-green-dark: #059669;
+        --primary-green-light: #34d399;
+        --accent-orange: #f97316;
+        --accent-yellow: #fbbf24;
+        --dark-bg: #0f0f0f;
+        --dark-card: #1a1a1a;
+        --text-white: #ffffff;
+        --text-light: #f0f0f0;
+        --text-muted: #a0a0a0;
+        --gradient-green: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        --gradient-energy: linear-gradient(135deg, #10b981 0%, #34d399 50%, #f97316 100%);
+        --shadow-glow: 0 0 30px rgba(16, 185, 129, 0.3);
+        --shadow-card: 0 10px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Animations */
+      @keyframes pulse-glow {
+        0%,
+        100% {
+          box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+        }
+        50% {
+          box-shadow: 0 0 40px rgba(16, 185, 129, 0.6);
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes gradient-shift {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      /* Buttons - Green Gradient Theme */
+      .green-button,
+      .green-button-2,
+      .green-button-stay,
+      .green-button-stay-2,
+      .green-upgrade-btn,
+      .upgrade-btn {
+        background: var(--gradient-green) !important;
+        color: var(--text-white) !important;
+        border-radius: 8px !important;
+        font-weight: 600 !important;
+        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3) !important;
+        transition: all 0.3s ease !important;
+        border: none !important;
+      }
+
+      .green-button:hover,
+      .green-button-2:hover,
+      .green-button-stay:hover,
+      .green-button-stay-2:hover,
+      .upgrade-btn:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 0 40px rgba(16, 185, 129, 0.5) !important;
+        background: linear-gradient(135deg, #34d399 0%, #10b981 100%) !important;
+      }
+
+      /* Navigation Button */
+      .nav-button {
+        background: var(--gradient-green) !important;
+        border-radius: 6px !important;
+        padding: 12px 24px !important;
+        font-weight: 600 !important;
+        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3) !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .nav-button:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 6px 25px rgba(16, 185, 129, 0.5) !important;
+      }
+
+      /* Section Backgrounds */
+      .section.burgundy {
+        background: linear-gradient(180deg, #0a2e1f 0%, #0f3d2a 50%, #0a2e1f 100%) !important;
+      }
+
+      .section.black-bg {
+        background: linear-gradient(180deg, #0f0f0f 0%, #1a1a1a 50%, #0f0f0f 100%) !important;
+      }
+
+      /* Program Cards */
+      .prod-cards,
+      .prod-cards-2 {
+        background: linear-gradient(145deg, #1a1a1a 0%, #252525 100%) !important;
+        border: 1px solid rgba(16, 185, 129, 0.2) !important;
+        border-radius: 16px !important;
+        box-shadow: var(--shadow-card) !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .prod-cards:hover,
+      .prod-cards-2:hover {
+        border-color: var(--primary-green) !important;
+        transform: translateY(-5px) !important;
+        box-shadow: 0 15px 50px rgba(16, 185, 129, 0.4) !important;
+      }
+
+      /* Card Text - Make White */
+      .prod-cards .title-medium,
+      .prod-cards .title-medium div,
+      .prod-cards h3,
+      .prod-cards-2 .title-medium,
+      .prod-cards-2 .title-medium div,
+      .prod-cards-2 h3 {
+        color: var(--text-white) !important;
+      }
+
+      .prod-cards .inter-15,
+      .prod-cards .inter-15 div,
+      .prod-cards p,
+      .prod-cards-2 .inter-15,
+      .prod-cards-2 .inter-15 div,
+      .prod-cards-2 p {
+        color: var(--text-light) !important;
+      }
+
+      .prod-cards .small-italic,
+      .prod-cards-2 .small-italic {
+        color: var(--text-light) !important;
+      }
+
+      .prod-cards .descr-prod,
+      .prod-cards-2 .descr-prod {
+        color: var(--text-light) !important;
+      }
+
+      /* Card Checkmarks - Make White */
+      .prod-cards .bullet-checks-prod,
+      .prod-cards-2 .bullet-checks-prod {
+        background: transparent !important;
+      }
+
+      .prod-cards .bullet-checks-prod img,
+      .prod-cards-2 .bullet-checks-prod img {
+        filter: brightness(0) invert(1) !important;
+        opacity: 1 !important;
+      }
+
+      .prod-cards .check-bullets-card,
+      .prod-cards-2 .check-bullets-card {
+        background: transparent !important;
+      }
+
+      .prod-cards .check-bullets-card img,
+      .prod-cards-2 .check-bullets-card img {
+        filter: brightness(0) invert(1) !important;
+        opacity: 1 !important;
+      }
+
+      /* Bullets Block Text */
+      .prod-cards .bullets-block,
+      .prod-cards-2 .bullets-block {
+        color: var(--text-light) !important;
+      }
+
+      .prod-cards .bullets-prod-card,
+      .prod-cards-2 .bullets-prod-card {
+        color: var(--text-light) !important;
+      }
+
+      /* Card Line Breaks */
+      .prod-cards .card-line-break,
+      .prod-cards-2 .card-line-break {
+        border-color: rgba(255, 255, 255, 0.2) !important;
+      }
+
+      .prod-cards .white-line-dashed,
+      .prod-cards-2 .white-line-dashed {
+        border-color: rgba(255, 255, 255, 0.3) !important;
+      }
+
+      /* Card Breaker Text */
+      .prod-cards .card-breaker-2,
+      .prod-cards-2 .card-breaker-2 {
+        color: var(--text-light) !important;
+      }
+
+      /* Card Button Text and Small Text */
+      .prod-cards .abcd-semimono-14,
+      .prod-cards .abcd-semimono-11-em,
+      .prod-cards .learn-btn2,
+      .prod-cards .learn-btn2 div,
+      .prod-cards-2 .abcd-semimono-14,
+      .prod-cards-2 .abcd-semimono-11-em,
+      .prod-cards-2 .learn-btn2,
+      .prod-cards-2 .learn-btn2 div {
+        color: var(--text-light) !important;
+      }
+
+      .prod-cards .green-mono,
+      .prod-cards .green-mono div,
+      .prod-cards-2 .green-mono,
+      .prod-cards-2 .green-mono div {
+        color: var(--primary-green) !important;
+      }
+
+      /* Medication Cost Included Text */
+      .prod-cards .normal-abcd,
+      .prod-cards-2 .normal-abcd {
+        color: var(--text-light) !important;
+      }
+
+      /* NT Treatment Cards - White Background Cards */
+      .nt-treatment-card {
+        background: #ffffff !important;
+        border-radius: 16px !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+      }
+
+      .nt-treatment-card .title-medium,
+      .nt-treatment-card .title-medium div,
+      .nt-treatment-card h3 {
+        color: #1a1a1a !important;
+        font-weight: 600 !important;
+      }
+
+      .nt-treatment-card .tc-faq-wrap,
+      .nt-treatment-card .tc-faq-wrap div {
+        color: #4a4a4a !important;
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+      }
+
+      /* Accordion Titles */
+      .nt-treatment-card .tc-faq-title-block,
+      .nt-treatment-card .tc-faq-title-block div {
+        color: #333333 !important;
+        font-weight: 500 !important;
+        font-size: 16px !important;
+      }
+
+      /* Accordion Answer Text */
+      .nt-treatment-card .tc-faq-answer-inner-wrap,
+      .nt-treatment-card .tc-faq-answer-inner-wrap div {
+        color: #4a4a4a !important;
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+      }
+
+      /* Plus Icons - Make Black */
+      .nt-treatment-card .tc-faq-icon-line {
+        background: #333333 !important;
+      }
+
+      .nt-treatment-card .tc-faq-icon-block {
+        border-color: #333333 !important;
+      }
+
+      /* Line Breaks */
+      .nt-treatment-card .nt-line-break {
+        border-color: rgba(0, 0, 0, 0.1) !important;
+      }
+
+      .nt-card .title-medium,
+      .nt-card .small-italic,
+      .nt-card .inter-15 {
+        color: #1a1a1a !important;
+      }
+
+      /* Button Text in White Cards */
+      .nt-treatment-card .upgrade-btn .abcd-semimono-14,
+      .nt-treatment-card .green-upgrade-btn .abcd-semimono-14 {
+        color: var(--text-white) !important;
+      }
+
+      /* FAQ Item Borders */
+      .nt-treatment-card .tc-faq-item {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+      }
+
+      .nt-treatment-card .tc-faq-item:last-child {
+        border-bottom: none !important;
+      }
+
+      /* Dark Hollow Card */
+      .dark-hollow-card .title-medium,
+      .dark-hollow-card .small-italic,
+      .dark-hollow-card .inter-15 {
+        color: var(--text-white) !important;
+      }
+
+      /* Section Headings on Dark Backgrounds */
+      .section.black-bg .graph-xcond-64,
+      .section.black-bg .graph-xcond-48,
+      .section.black-bg h2,
+      .section.black-bg h3 {
+        color: var(--text-white) !important;
+      }
+
+      /* Section Description Text on Dark Backgrounds */
+      .section.black-bg .inter-18-em-copy,
+      .section.black-bg .long-par p {
+        color: var(--text-light) !important;
+      }
+
+      /* Longevity Section Text */
+      .longevity-prods .graph-xcond-64,
+      .longevity-prods h2 {
+        color: var(--text-white) !important;
+      }
+
+      .longevity-prods .inter-18-em-copy {
+        color: var(--text-light) !important;
+      }
+
+      /* Links */
+      .link,
+      .link-text {
+        color: var(--primary-green) !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .link:hover,
+      .link-text:hover {
+        color: var(--primary-green-light) !important;
+      }
+
+      /* Footer */
+      .footer-link:hover,
+      .nav-footer-link:hover {
+        color: var(--primary-green) !important;
+      }
+
+      /* Check Marks */
+      .bullet-checks-prod {
+        background: var(--primary-green) !important;
+        border-radius: 50% !important;
+      }
+
+      /* ATF Bars */
+      .bar-block {
+        border-color: rgba(16, 185, 129, 0.3) !important;
+      }
+
+      .title-small-italic {
+        color: var(--primary-green) !important;
+        font-weight: 600 !important;
+      }
+
+      /* FAQ Styling */
+      .faqs-container {
+        border-color: rgba(16, 185, 129, 0.2) !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .faqs-container:hover {
+        border-color: var(--primary-green) !important;
+      }
+
+      .plus-icon {
+        background: var(--primary-green) !important;
+      }
+
+      /* Prefooter CTA */
+      .prefooter-wrapper {
+        border-radius: 20px !important;
+        overflow: hidden !important;
+      }
+
+      .cta-overlay {
+        background: linear-gradient(135deg, rgba(16, 185, 129, 0.8) 0%, rgba(5, 150, 105, 0.9) 100%) !important;
+      }
+
+      /* Slider Navigation */
+      .splide__arrow {
+        background: var(--primary-green) !important;
+      }
+
+      /* Text Colors */
+      .stats-block,
+      .caps-text {
+        color: var(--primary-green) !important;
+        font-weight: 600 !important;
+      }
+
+      /* Hollow Buttons */
+      .hollow-button,
+      .white-hollow-btn {
+        border: 2px solid var(--primary-green) !important;
+        color: var(--primary-green) !important;
+        border-radius: 8px !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .hollow-button:hover,
+      .white-hollow-btn:hover {
+        background: var(--primary-green) !important;
+        color: var(--dark-bg) !important;
+      }
+
+      /* Navigation Links */
+      .nav-link {
+        color: var(--text-white) !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .nav-link:hover {
+        color: var(--primary-green) !important;
+      }
+
+      .nav-link.w--current {
+        color: var(--primary-green) !important;
+      }
+
+      /* Footer Links */
+      .footer-link,
+      .nav-footer-link {
+        color: var(--text-light) !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .footer-link:hover,
+      .nav-footer-link:hover {
+        color: var(--primary-green) !important;
+      }
+
+      .footer-column-header {
+        color: var(--text-white) !important;
+        font-weight: 600 !important;
+      }
+
+      /* Button Text */
+      .button-text,
+      .nav-button-text {
+        color: var(--text-white) !important;
+        font-weight: 600 !important;
+      }
+
+      /* Hero Section - Header Colors */
+      .header.left-align.smaller-title-prod,
+      .header.left-align.smaller-title-prod .cursive {
+        color: var(--primary-green) !important;
+      }
+
+      .header.left-align.smaller-title-prod {
+        color: var(--primary-green) !important;
+      }
+
+      /* Hero Section - Link Button */
+      .link-btn,
+      .link-btn .button-text {
+        color: var(--primary-green) !important;
+        text-decoration: underline !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .link-btn:hover,
+      .link-btn:hover .button-text {
+        color: var(--primary-green-light) !important;
+      }
+
+      /* Hero Section - Paragraph Text */
+      .prod-atf-par .paragraph-small {
+        color: #333333 !important;
+      }
+
+      /* Hero Section - Rating Text */
+      .rated-y-text {
+        color: #333333 !important;
+      }
+
+      /* Navigation Links in Header */
+      .navbar .nav-link {
+        color: #333333 !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .navbar .nav-link:hover {
+        color: var(--primary-green) !important;
+      }
+
+      .navbar .nav-link.w--current {
+        color: var(--primary-green) !important;
+      }
+
+      /* Ensure proper text contrast on light backgrounds */
+      .section:not(.black-bg):not(.burgundy) .header,
+      .section:not(.black-bg):not(.burgundy) .paragraph-small,
+      .section:not(.black-bg):not(.burgundy) .paragraph-medium {
+        color: #333333 !important;
       }
     </style>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -91,7 +594,7 @@
       }
 
       .splide__pagination__page.is-active {
-        background: #21694a;
+        background: var(--primary-green);
         z-index: 1;
         transform: scale(1);
       }
@@ -228,7 +731,7 @@
 
         /*
   .system-blocks.active-open .system-number-div {
-  background-color: #21694a;
+  background-color: var(--primary-green);
   }
 
   .system-blocks.active-open .system-number {
@@ -460,7 +963,7 @@
             </div>
             <div class="right-prod">
               <div class="prod-atf-img">
-                <img src="/images/6821bb5d9eb44ecef081229e_fella_GLP1.webp" alt="" class="img no-click" />
+                <img src="/images/avonn-vertical.jpg" alt="" class="img no-click" />
               </div>
             </div>
           </div>
@@ -469,42 +972,28 @@
               <div class="prod-stars"><img src="/images/65062a404dbf8fc5d0a4c0d9_stars%20prod.svg" loading="lazy" alt="" class="img" /></div>
               <div class="rated-y-text">Rated 4.9 out of 5 by our clients</div>
             </div>
-            <div class="prod-atf-right logos-full-width">
-              <div class="gw"><img src="/images/62b50390b9104cd6d71c23dc_CBS.svg" loading="lazy" alt="" class="img invert-color" /></div>
-              <div class="fitt invert-color yahoo-adjust-logo reverse-invert nyt-logp invert-here"><img src="/images/6629ae3d987053a1dfb29c70_image%208.webp" loading="lazy" alt="" class="img contain" /></div>
-              <div class="curative invert-color techcrunch-adjust-logo"><img src="/images/62b50391feeafe0e891c515d_NBC.svg" loading="lazy" alt="" class="img" /></div>
-            </div>
           </div>
         </div>
       </div>
-      <div class="atf-bars prod-colors">
+      <div class="atf-bars">
         <div class="top-bar">
-          <div id="w-node-_5ef3b250-d161-3638-9364-c4e3b38b73bb-f2f32e32" class="bar-block side-borders-zero white-borders">
+          <div id="w-node-_564a6396-d55d-1f55-0db7-fa7363f7b04b-27c9e69f" class="bar-block side-borders-zero">
             <div class="title-small-italic">
-              Lose weight
+              Build Strength
               <br />
             </div>
           </div>
-          <div id="w-node-_5ef3b250-d161-3638-9364-c4e3b38b73bf-f2f32e32" class="bar-block white-borders"><div class="title-small-italic">Have more energy</div></div>
-          <div id="w-node-_5ef3b250-d161-3638-9364-c4e3b38b73c2-f2f32e32" class="bar-block side-borders-zero hide-mobile white-border">
+          <div id="w-node-_6b3e3898-32e0-732f-c35b-ecb9cb92027b-27c9e69f" class="bar-block"><div class="title-small-italic">Burn Fat</div></div>
+          <div id="w-node-a90303f4-41d6-75f0-386c-93b6b3460082-27c9e69f" class="bar-block side-borders-zero hide-mobile">
             <div class="title-small-italic">
-              Results for life
+              Transform Your Body
               <br />
             </div>
           </div>
         </div>
         <div class="bottom-bar">
-          <div id="w-node-_5ef3b250-d161-3638-9364-c4e3b38b73c7-f2f32e32" class="bar-block left-border-zero white-border"><div class="graph-xcond-36">Ongoing care & support</div></div>
-          <div id="w-node-_5ef3b250-d161-3638-9364-c4e3b38b73ca-f2f32e32" class="bar-block top-border-zero white-border">
-            <div class="five-star-block">
-              <div class="gold-stars"><img src="/images/62b50391afa4af0f48264c5e_Gold%20Stars.svg" loading="lazy" alt="" class="img" /></div>
-              <div class="gold-stars"><img src="/images/62b50391afa4af0f48264c5e_Gold%20Stars.svg" loading="lazy" alt="" class="img" /></div>
-              <div class="gold-stars"><img src="/images/62b50391afa4af0f48264c5e_Gold%20Stars.svg" loading="lazy" alt="" class="img" /></div>
-              <div class="gold-stars"><img src="/images/62b50391afa4af0f48264c5e_Gold%20Stars.svg" loading="lazy" alt="" class="img" /></div>
-              <div class="gold-stars"><img src="/images/62b50391afa4af0f48264c5e_Gold%20Stars.svg" loading="lazy" alt="" class="img" /></div>
-            </div>
-            <div class="graph-xcond-36">4.9 average rating</div>
-          </div>
+          <div id="w-node-_8c795157-fe9c-63e5-f678-1f655066097e-27c9e69f" class="bar-block left-border-zero"><div class="title-medium smaller-mobile-thick">Train anytime, anywhere</div></div>
+          <div id="w-node-_5188c9d3-6bf3-cf3c-9fb4-42ced3cd64f9-27c9e69f" class="bar-block top-border-zero"><div class="title-medium smaller-mobile-thick">💰Money-back guarantee</div></div>
         </div>
       </div>
     </header>
@@ -838,7 +1327,7 @@
                 <div class="small-italic">Find your ideal treatment</div>
               </div>
               <div class="w-layout-vflex nt-horizontal-card-cta-wrap">
-                <div class="inter-15">Answer a few simple questions and find the right treatment for you.</div>
+                <div class="inter-15" style="color: #d9d9d9 !important">Answer a few simple questions and find the right treatment for you.</div>
                 <a
                   data-six-monthly-price-total="534"
                   data-type-add="tirzepatide"
@@ -2168,166 +2657,6 @@
     <script src="/js/jquery.inview.min.js"></script>
     <script src="/js/splide.min.js"></script>
     <script src="/js/E-v1.js" async=""></script>
-
-    <script>
-      // when the form is submitted
-      $(".form").submit(() => {
-        setTimeout(() => {
-          $(".success-trigger").click();
-        }, 900);
-      });
-
-      //System Scroller Animation
-      $(".system-blocks").on("click", function () {
-        $(this).siblings(".system-blocks").removeClass("active-open");
-        $(this).addClass("active-open");
-      });
-
-      $("#MA").on("click", function () {
-        $(".system-content-switch").css("opacity", "0");
-        $(".ma").css("opacity", "1");
-      });
-
-      $("#PC").on("click", function () {
-        $(".system-content-switch").css("opacity", "0");
-        $(".pc").css("opacity", "1");
-      });
-
-      $("#ME").on("click", function () {
-        $(".system-content-switch").css("opacity", "0");
-        $(".me").css("opacity", "1");
-      });
-
-      $("#OC").on("click", function () {
-        $(".system-content-switch").css("opacity", "0");
-        $(".oc").css("opacity", "1");
-      });
-
-      $(".t1").on("inview", function (event, isInView) {
-        if (isInView) {
-          $("#MA").click();
-        } else {
-        }
-      });
-
-      $(".t2").on("inview", function (event, isInView) {
-        if (isInView) {
-          $("#PC").click();
-        } else {
-        }
-      });
-
-      $(".t3").on("inview", function (event, isInView) {
-        if (isInView) {
-          $("#ME").click();
-        } else {
-        }
-      });
-
-      //yellow side button
-      if ($(".join-now-side-btn")[0]) {
-        $(window).scroll(function () {
-          if ($(window).scrollTop() >= 500) {
-            $(".join-now-side-btn").css("transform", "translate(0%, 0%)");
-          } else {
-            $(".join-now-side-btn").css("transform", "translate(200%, 0%)");
-          }
-        });
-
-        $(window).scroll(function () {
-          if ($(window).scrollTop() >= 750) {
-            $(".btn-expand").click();
-          } else {
-            $(".btn-shrink").click();
-          }
-        });
-      }
-
-      //menu-lock
-      $(".burger-menu").click(function () {
-        $(this).toggleClass("menu-opened");
-        if ($(this).hasClass("menu-opened")) {
-          $("body").css("overflow", "hidden");
-        } else {
-          $("body").css("overflow", "visible");
-        }
-      });
-
-      //toggle price
-      $(".switch-6m").on("click", function () {
-        $(".toggle-here").removeClass("toggle-monthly");
-      });
-
-      $(".switch-m").on("click", function () {
-        $(".toggle-here").addClass("toggle-monthly");
-      });
-
-      $(".toggle-here").on("click", function () {
-        if ($(this).hasClass("toggle-monthly")) {
-          $(".switch-6m").click();
-        } else {
-          $(".switch-m").click();
-        }
-      });
-
-      //toggle price
-      $(".tab-link-compare").on("click", function () {
-        $(".rad-btn-compare").removeClass("activated-rad");
-        $(".fill-rad-comp").removeClass("activated-fill");
-        $(this).find(".rad-btn-compare").addClass("activated-rad");
-        $(this).find(".fill-rad-comp").addClass("activated-fill");
-      });
-
-      $(".right-6-monthly").on("click", function () {
-        $(".bg-active-toggle").removeClass("bg-mob-tog");
-        $(".six-month-mob-p").addClass("toggle-monthly-mob");
-        $(".month-mob-p").removeClass("toggle-monthly-mob");
-      });
-
-      $(".left-monthly").on("click", function () {
-        $(".bg-active-toggle").addClass("bg-mob-tog");
-        $(".month-mob-p").addClass("toggle-monthly-mob");
-        $(".six-month-mob-p").removeClass("toggle-monthly-mob");
-      });
-
-      if ($(".reviews-2-contain")[0]) {
-        reviewSecond();
-      }
-
-      if ($(".reviews-3-contain")[0]) {
-        reviewThird();
-      }
-
-      if ($(".reviews-4-contain")[0]) {
-        reviewFourth();
-      }
-
-      //MENU TREATMENTS DROPDOWN
-      $(".dropdown-tirz").on("mouseenter", function () {
-        $(".treatment-hover-block").css("display", "none");
-        $(".treat-dropdown-block.right .dropdown-tirz").css("display", "flex");
-      });
-
-      $(".dropdown-semag").on("mouseenter", function () {
-        $(".treatment-hover-block").css("display", "none");
-        $(".treat-dropdown-block.right .dropdown-semag").css("display", "flex");
-      });
-
-      $(".dropdown-oral").on("mouseenter", function () {
-        $(".treatment-hover-block").css("display", "none");
-        $(".treat-dropdown-block.right .dropdown-oral").css("display", "flex");
-      });
-
-      $(".dropdown-inject").on("mouseenter", function () {
-        $(".treatment-hover-block").css("display", "none");
-        $(".treat-dropdown-block.right .dropdown-inject").css("display", "flex");
-      });
-
-      $(".dropdown-enclo").on("mouseenter", function () {
-        $(".treatment-hover-block").css("display", "none");
-        $(".treat-dropdown-block.right .dropdown-enclo").css("display", "flex");
-      });
-    </script>
 
     <!-- Live chat-->
     <script src="/js/chat.bundle.js"></script>

@@ -9,7 +9,6 @@
     <meta content="/images/661c99c51189817f9b594398_Replace%20Image.webp" property="og:image" />
     <meta content="Avonn Fitness Reviews - Getting Men Results That Last" property="twitter:title" />
     <meta content="Sustained weight loss is more than just numbers on a scale. Hear from some of our clients, on what they love most about the program." property="twitter:description" />
-    <meta content="https://cdn.prod.website-files.com/62aebd5e1a672b9ce6b506c4/661c99c51189817f9b594398_Replace%20Image.webp" property="twitter:image" />
     <meta property="og:type" content="website" />
     <meta content="summary_large_image" name="twitter:card" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -17,6 +16,235 @@
     <style>
       html.w-mod-js:not(.w-mod-ix3) :is(.rm-as-indicator-dot-ping) {
         visibility: hidden !important;
+      }
+    </style>
+    <style>
+      /* Avonn Fitness - Vibrant Design System */
+      :root {
+        --primary-green: #10b981;
+        --primary-green-dark: #059669;
+        --primary-green-light: #34d399;
+        --accent-orange: #f97316;
+        --accent-yellow: #fbbf24;
+        --dark-bg: #0f0f0f;
+        --dark-card: #1a1a1a;
+        --text-white: #ffffff;
+        --text-light: #f0f0f0;
+        --text-muted: #a0a0a0;
+        --gradient-green: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        --gradient-energy: linear-gradient(135deg, #10b981 0%, #34d399 50%, #f97316 100%);
+        --shadow-glow: 0 0 30px rgba(16, 185, 129, 0.3);
+        --shadow-card: 0 10px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Buttons - Green Gradient Theme */
+      .green-button,
+      .green-button-2,
+      .green-button-stay,
+      .green-button-stay-2 {
+        background: var(--gradient-green) !important;
+        color: var(--text-white) !important;
+        border-radius: 8px !important;
+        font-weight: 600 !important;
+        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3) !important;
+        transition: all 0.3s ease !important;
+        border: none !important;
+      }
+
+      .green-button:hover,
+      .green-button-2:hover,
+      .green-button-stay:hover,
+      .green-button-stay-2:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 0 40px rgba(16, 185, 129, 0.5) !important;
+        background: linear-gradient(135deg, #34d399 0%, #10b981 100%) !important;
+      }
+
+      /* Navigation Button */
+      .nav-button {
+        background: var(--gradient-green) !important;
+        border-radius: 6px !important;
+        padding: 12px 24px !important;
+        font-weight: 600 !important;
+        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3) !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .nav-button:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 6px 25px rgba(16, 185, 129, 0.5) !important;
+      }
+
+      /* Section Backgrounds */
+      .section.burgundy {
+        background: linear-gradient(180deg, #0a2e1f 0%, #0f3d2a 50%, #0a2e1f 100%) !important;
+      }
+
+      .section.black-bg {
+        background: linear-gradient(180deg, #0f0f0f 0%, #1a1a1a 50%, #0f0f0f 100%) !important;
+      }
+
+      .section.green-bg {
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+      }
+
+      /* Links */
+      .link,
+      .link-text {
+        color: var(--primary-green) !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .link:hover,
+      .link-text:hover {
+        color: var(--primary-green-light) !important;
+      }
+
+      /* Footer */
+      .footer-link:hover,
+      .nav-footer-link:hover {
+        color: var(--primary-green) !important;
+      }
+
+      /* Navigation Links */
+      .nav-link {
+        color: #333333 !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .nav-link:hover {
+        color: var(--primary-green) !important;
+      }
+
+      .nav-link.w--current {
+        color: var(--primary-green) !important;
+      }
+
+      /* Footer Links */
+      .footer-link,
+      .nav-footer-link {
+        color: var(--text-light) !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .footer-link:hover,
+      .nav-footer-link:hover {
+        color: var(--primary-green) !important;
+      }
+
+      .footer-column-header {
+        color: var(--text-white) !important;
+        font-weight: 600 !important;
+      }
+
+      /* Button Text */
+      .button-text,
+      .nav-button-text {
+        color: var(--text-white) !important;
+        font-weight: 600 !important;
+      }
+
+      /* Header Text Colors */
+      .header.left-align .cursive,
+      .header .cursive {
+        color: var(--primary-green) !important;
+      }
+
+      .header.left-align {
+        color: var(--primary-green) !important;
+      }
+
+      /* Section Headings on Dark Backgrounds */
+      .section.black-bg .graph-xcond-48,
+      .section.black-bg h2,
+      .section.black-bg h3 {
+        color: var(--text-white) !important;
+      }
+
+      /* Section Headings on Light Backgrounds */
+      .section:not(.black-bg):not(.burgundy):not(.green-bg) .header,
+      .section:not(.black-bg):not(.burgundy):not(.green-bg) h2 {
+        color: #1a1a1a !important;
+      }
+
+      /* Paragraph Text */
+      .paragraph-medium,
+      .paragraph-small {
+        color: #333333 !important;
+      }
+
+      .section.black-bg .paragraph-medium,
+      .section.black-bg .paragraph-small,
+      .section.burgundy .paragraph-medium,
+      .section.burgundy .paragraph-small {
+        color: var(--text-light) !important;
+      }
+
+      /* Video Header Text - White */
+      .review-video-header .header,
+      .review-video-header .header .cursive,
+      .review-video-header h2,
+      .review-video-header h2 .cursive {
+        color: var(--text-white) !important;
+      }
+
+      /* View Review Links */
+      .view-review,
+      .view-review .paragraph-small {
+        color: var(--primary-green) !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .view-review:hover,
+      .view-review:hover .paragraph-small {
+        color: var(--primary-green-light) !important;
+      }
+
+      /* White Links on Dark Backgrounds */
+      .white-link,
+      .white-link-copy {
+        color: var(--text-white) !important;
+      }
+
+      .white-link:hover,
+      .white-link-copy:hover {
+        color: var(--primary-green-light) !important;
+      }
+
+      /* Before/After Review Section - Make All Text White */
+      .maroon-rev .header,
+      .maroon-rev .header .cursive,
+      .maroon-rev h2,
+      .maroon-rev h2 .cursive {
+        color: var(--text-white) !important;
+      }
+
+      .maroon-rev .title-medium,
+      .maroon-rev .title-medium.center-text {
+        color: var(--text-white) !important;
+        font-weight: 600 !important;
+      }
+
+      .maroon-rev .paragraph-medium,
+      .maroon-rev .paragraph-medium p,
+      .maroon-rev .div-block-243,
+      .maroon-rev .div-block-243 p {
+        color: var(--text-light) !important;
+      }
+
+      .maroon-rev .label-small,
+      .maroon-rev .bar-score .label-small {
+        color: var(--text-white) !important;
+        font-weight: 600 !important;
+      }
+
+      .maroon-rev .bottom-div-ba,
+      .maroon-rev .bottom-div-details {
+        color: var(--text-white) !important;
+      }
+
+      .maroon-rev .mini-caps {
+        color: var(--text-white) !important;
       }
     </style>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -84,7 +312,7 @@
       }
 
       span.yotpo-icon-profile.yotpo-header-element.pull-left {
-        background: #21694a !important;
+        background: var(--primary-green) !important;
       }
 
       .yotpo-icon.yotpo-icon-star.rating-star.pull-left {
@@ -92,7 +320,7 @@
       }
 
       span.yotpo-icon-profile.yotpo-header-element.pull-left {
-        background: #21694a !important;
+        background: var(--primary-green) !important;
       }
 
       .yotpo-user-letter,
@@ -151,7 +379,7 @@
       .yotpo input[type="button"].primary-color-btn {
         margin-top: -25px;
         display: block;
-        background-color: #21694a !important;
+        background-color: var(--primary-green) !important;
       }
 
       .yotpo .write-review .connect-wrapper .form-element.email-input {
@@ -362,7 +590,7 @@
 
         /*
   .system-blocks.active-open .system-number-div {
-  background-color: #21694a;
+  background-color: var(--primary-green);
   }
 
   .system-blocks.active-open .system-number {
@@ -880,9 +1108,8 @@
           <span class="cursive">
             Lose more weight
             <br />
-            ‍
           </span>
-          WITH Avonn Fitness
+          <span style="color: #f0f0f0 !important">WITH Avonn Fitness</span>
         </h2>
         <div class="reviews-ba-sect">
           <div class="ba-pair">
@@ -1176,7 +1403,7 @@
                 Watch Justin's
                 <br />
               </span>
-              Weightloss journey
+              <span style="color: #10b981">Weightloss journey</span>
               <br />
               <span class="cursive">with Avonn Fitness</span>
               <span class="cursive"><br /></span>
@@ -1439,164 +1666,5 @@
     <script src="/js/jquery.inview.min.js"></script>
     <script src="/js/splide.min.js"></script>
     <script src="/js/E-v1.js" async=""></script>
-
-    <script>
-      // when the form is submitted
-      $(".form").submit(() => {
-        setTimeout(() => {
-          $(".success-trigger").click();
-        }, 900);
-      });
-
-      //System Scroller Animation
-      $(".system-blocks").on("click", function () {
-        $(this).siblings(".system-blocks").removeClass("active-open");
-        $(this).addClass("active-open");
-      });
-
-      $("#MA").on("click", function () {
-        $(".system-content-switch").css("opacity", "0");
-        $(".ma").css("opacity", "1");
-      });
-
-      $("#PC").on("click", function () {
-        $(".system-content-switch").css("opacity", "0");
-        $(".pc").css("opacity", "1");
-      });
-
-      $("#ME").on("click", function () {
-        $(".system-content-switch").css("opacity", "0");
-        $(".me").css("opacity", "1");
-      });
-
-      $("#OC").on("click", function () {
-        $(".system-content-switch").css("opacity", "0");
-        $(".oc").css("opacity", "1");
-      });
-
-      $(".t1").on("inview", function (event, isInView) {
-        if (isInView) {
-          $("#MA").click();
-        } else {
-        }
-      });
-
-      $(".t2").on("inview", function (event, isInView) {
-        if (isInView) {
-          $("#PC").click();
-        } else {
-        }
-      });
-
-      $(".t3").on("inview", function (event, isInView) {
-        if (isInView) {
-          $("#ME").click();
-        } else {
-        }
-      });
-
-      //yellow side button
-      if ($(".join-now-side-btn")[0]) {
-        $(window).scroll(function () {
-          if ($(window).scrollTop() >= 500) {
-            $(".join-now-side-btn").css("transform", "translate(0%, 0%)");
-          } else {
-            $(".join-now-side-btn").css("transform", "translate(200%, 0%)");
-          }
-        });
-
-        $(window).scroll(function () {
-          if ($(window).scrollTop() >= 750) {
-            $(".btn-expand").click();
-          } else {
-            $(".btn-shrink").click();
-          }
-        });
-      }
-
-      //menu-lock
-      $(".burger-menu").click(function () {
-        $(this).toggleClass("menu-opened");
-        if ($(this).hasClass("menu-opened")) {
-          $("body").css("overflow", "hidden");
-        } else {
-          $("body").css("overflow", "visible");
-        }
-      });
-
-      //toggle price
-      $(".switch-6m").on("click", function () {
-        $(".toggle-here").removeClass("toggle-monthly");
-      });
-
-      $(".switch-m").on("click", function () {
-        $(".toggle-here").addClass("toggle-monthly");
-      });
-
-      $(".toggle-here").on("click", function () {
-        if ($(this).hasClass("toggle-monthly")) {
-          $(".switch-6m").click();
-        } else {
-          $(".switch-m").click();
-        }
-      });
-
-      //toggle price
-      $(".tab-link-compare").on("click", function () {
-        $(".rad-btn-compare").removeClass("activated-rad");
-        $(".fill-rad-comp").removeClass("activated-fill");
-        $(this).find(".rad-btn-compare").addClass("activated-rad");
-        $(this).find(".fill-rad-comp").addClass("activated-fill");
-      });
-
-      $(".right-6-monthly").on("click", function () {
-        $(".bg-active-toggle").removeClass("bg-mob-tog");
-        $(".six-month-mob-p").addClass("toggle-monthly-mob");
-        $(".month-mob-p").removeClass("toggle-monthly-mob");
-      });
-
-      $(".left-monthly").on("click", function () {
-        $(".bg-active-toggle").addClass("bg-mob-tog");
-        $(".month-mob-p").addClass("toggle-monthly-mob");
-        $(".six-month-mob-p").removeClass("toggle-monthly-mob");
-      });
-      if ($(".reviews-2-contain")[0]) {
-        reviewSecond();
-      }
-
-      if ($(".reviews-3-contain")[0]) {
-        reviewThird();
-      }
-
-      if ($(".reviews-4-contain")[0]) {
-        reviewFourth();
-      }
-
-      //MENU TREATMENTS DROPDOWN
-      $(".dropdown-tirz").on("mouseenter", function () {
-        $(".treatment-hover-block").css("display", "none");
-        $(".treat-dropdown-block.right .dropdown-tirz").css("display", "flex");
-      });
-
-      $(".dropdown-semag").on("mouseenter", function () {
-        $(".treatment-hover-block").css("display", "none");
-        $(".treat-dropdown-block.right .dropdown-semag").css("display", "flex");
-      });
-
-      $(".dropdown-oral").on("mouseenter", function () {
-        $(".treatment-hover-block").css("display", "none");
-        $(".treat-dropdown-block.right .dropdown-oral").css("display", "flex");
-      });
-
-      $(".dropdown-inject").on("mouseenter", function () {
-        $(".treatment-hover-block").css("display", "none");
-        $(".treat-dropdown-block.right .dropdown-inject").css("display", "flex");
-      });
-
-      $(".dropdown-enclo").on("mouseenter", function () {
-        $(".treatment-hover-block").css("display", "none");
-        $(".treat-dropdown-block.right .dropdown-enclo").css("display", "flex");
-      });
-    </script>
   </body>
 </html>

@@ -15,7 +15,6 @@
     <meta
       content="Avonn Fitness offers structured digital workout programs, high-protein nutrition plans, and personalized coaching. Get fit in 20 or 40 minutes with instant download eBooks. Transform your health and achieve real results."
       property="twitter:description" />
-    <meta content="https://cdn.prod.website-files.com/62aebd5e1a672b9ce6b506c4/661c99c51189817f9b594398_Replace%20Image.webp" property="twitter:image" />
     <meta property="og:type" content="website" />
     <meta content="summary_large_image" name="twitter:card" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -275,6 +274,40 @@
       /* Floating Animation for Images */
       .prod-atf-img-4 img {
         animation: float 6s ease-in-out infinite;
+      }
+
+      /* Hero image responsiveness */
+      .prod-atf-img-4 {
+        max-width: 420px;
+        width: 100%;
+      }
+
+      .prod-atf-img-4 img {
+        width: 100%;
+        height: auto;
+      }
+
+      @media (min-width: 992px) {
+        .prod-atf-img-4 {
+          inset: -3em 1.25em auto auto;
+        }
+      }
+
+      @media (max-width: 991px) {
+        .prod-atf-img-4 {
+          max-width: 320px;
+          margin: 0 auto 24px;
+        }
+
+        .system-left-block .prod-atf-img-4 img {
+          max-height: 420px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .prod-atf-img-4 {
+          max-width: 170px;
+        }
       }
 
       /* Pulsing CTA Buttons */
@@ -1924,7 +1957,7 @@
           <div class="price-bar">
             <div class="top-bar-info"><div class="caption dark-caption">Start today!</div></div>
             <div class="price-bar-content">
-              <div class="paragraph-medium center-text">
+              <div class="paragraph-medium center-text" style="color: #0f0f0f !important">
                 Your complete fitness transformation -
                 <em>starts here</em>
               </div>
@@ -1936,11 +1969,11 @@
               </div>
               <div class="listed-items-price">
                 <img src="images/652e042cdc5430370e876f24_DOCTOR%203%20%281%29.svg" loading="lazy" alt="" class="img-list" />
-                <div class="paragraph-small">Structured workout programs</div>
+                <div class="paragraph-small" style="color: #0f0f0f !important">Structured workout programs</div>
               </div>
               <div class="listed-items-price">
                 <img src="images/664fe87fbc3ee41916818cca_microscope.webp" loading="lazy" alt="" class="img-list" />
-                <div class="paragraph-small">High-protein nutrition plans</div>
+                <div class="paragraph-small" style="color: #0f0f0f !important">High-protein nutrition plans</div>
               </div>
               <div class="listed-items-price hide">
                 <img src="images/652dffdbc2b0e3f907e3aed9_GET%20UP%20EARLY%201.svg" loading="lazy" alt="" class="img-list" />
